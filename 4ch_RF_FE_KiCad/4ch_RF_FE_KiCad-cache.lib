@@ -1,0 +1,266 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ADL5611ARKZ-R7_ADL5611ARKZ-R7
+#
+DEF ADL5611ARKZ-R7_ADL5611ARKZ-R7 U 0 10 Y Y 1 L N
+F0 "U" 800 400 60 H V C CNN
+F1 "ADL5611ARKZ-R7_ADL5611ARKZ-R7" 800 300 60 H V C CNN
+F2 "RK_3" 800 240 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ RK_3
+$ENDFPLIST
+DRAW
+P 2 1 1 5 300 -600 1300 -600 N
+P 2 1 1 5 300 200 300 -600 N
+P 2 1 1 5 1300 -600 1300 200 N
+P 2 1 1 5 1300 200 300 200 N
+X RFIN 1 0 0 300 R 59 59 1 1 I
+X GND 2 1600 -400 300 L 59 59 1 1 W
+X RFOUT 3 1600 0 300 L 59 59 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_US
+#
+DEF Device_R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PJ1-021-SMT-TR_PJ1-021-SMT-TR
+#
+DEF PJ1-021-SMT-TR_PJ1-021-SMT-TR J 0 40 Y N 1 F N
+F0 "J" -300 200 50 H V L BNN
+F1 "PJ1-021-SMT-TR_PJ1-021-SMT-TR" -300 -200 50 H V L BNN
+F2 "CUI_PJ1-021-SMT-TR" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "1.05" 0 0 50 H I L BNN
+F5 "CUI INC" 0 0 50 H I L BNN
+DRAW
+A -225 100 50 899 -900 0 0 6 N -225 50 -225 150
+P 2 0 0 6 -225 150 -50 150 N
+P 2 0 0 6 -150 -50 -175 -100 N
+P 2 0 0 6 -125 -100 -150 -50 N
+P 2 0 0 6 -50 25 0 25 N
+P 2 0 0 6 -50 50 -225 50 N
+P 2 0 0 6 -50 50 -50 25 N
+P 2 0 0 6 -50 150 -50 50 N
+P 2 0 0 6 -50 175 -50 150 N
+P 2 0 0 6 0 -100 -125 -100 N
+P 2 0 0 6 0 0 0 -100 N
+P 2 0 0 6 0 25 0 175 N
+P 2 0 0 6 0 175 -50 175 N
+P 3 0 0 6 0 -100 -20 -50 20 -50 F
+X 1 1 200 100 200 L 40 40 0 0 P
+X 2 2 200 -100 200 L 40 40 0 0 P
+X 3 3 200 0 200 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# dk_Coaxial-Connectors-RF_5-1814832-1
+#
+DEF dk_Coaxial-Connectors-RF_5-1814832-1 J 0 40 Y Y 1 F N
+F0 "J" -100 50 60 H V C CNN
+F1 "dk_Coaxial-Connectors-RF_5-1814832-1" 50 -100 60 H V L CNN
+F2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A97594-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "5-1814832-1" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Coaxial Connectors (RF)" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN SMA JACK STR 50 OHM PCB" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 2 -1 52 1789 -266 0 1 0 N -50 0 50 -25
+A 3 1 53 271 -1789 0 1 0 N 50 25 -50 0
+C 0 0 25 0 1 0 N
+X ~ 1 0 -200 145 U 50 50 1 1 P
+X ~ 2 200 0 175 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jcg_custom_parts_ACP3225
+#
+DEF jcg_custom_parts_ACP3225 L 0 40 Y Y 1 F N
+F0 "L" 0 -140 50 H V C CNN
+F1 "jcg_custom_parts_ACP3225" -10 290 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "CMC 500 Ohms @ 100MHz 2A DCR 40 mOhm" 50 190 50 H V C CNN "Description"
+F5 "445-172408-1-ND" 0 500 50 H I C CNN "Digi-Key PN"
+DRAW
+A -60 -60 22 1534 266 0 1 0 N -80 -50 -40 -50
+A -60 50 20 -1799 -1 0 1 0 N -80 50 -40 50
+A -20 -60 22 1534 266 0 1 0 N -40 -50 0 -50
+A 20 -60 22 1534 266 0 1 0 N 0 -50 40 -50
+A 60 -60 22 1534 266 0 1 0 N 40 -50 80 -50
+A -20 50 20 -1799 -1 1 1 0 N -40 50 0 50
+A 20 50 20 -1799 -1 1 1 0 N 0 50 40 50
+A 60 50 20 -1799 -1 1 1 0 N 40 50 80 50
+S -120 100 120 -90 0 1 0 N
+P 2 0 1 0 -100 -50 -80 -50 N
+P 2 0 1 0 -90 -20 90 -20 N
+P 2 0 1 0 -90 10 90 10 N
+P 2 0 1 0 80 -50 100 -50 N
+P 3 0 1 0 -100 60 -80 60 -80 50 N
+P 3 0 1 0 100 60 80 60 80 50 N
+X ~ 1 -200 60 100 R 50 50 1 1 I
+X ~ 2 -200 -50 100 R 50 50 1 1 I
+X ~ 3 200 -50 100 L 50 50 1 1 I
+X ~ 4 200 60 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# jcg_custom_parts_BGS12SN6
+#
+DEF jcg_custom_parts_BGS12SN6 U 0 40 Y Y 1 F N
+F0 "U" 0 -50 50 H V C CNN
+F1 "jcg_custom_parts_BGS12SN6" 0 350 50 H V C CNN
+F2 "jcg_custom:BGS12SN6" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+S -350 300 350 0 0 1 0 N
+P 2 0 1 0 -50 150 -100 150 N
+P 2 0 1 0 -50 150 100 250 N
+P 2 0 1 0 100 250 150 250 N
+P 2 0 1 0 150 50 100 50 N
+X RF2 1 450 50 100 L 50 50 1 1 I
+X GND 2 450 150 100 L 50 50 1 1 I
+X RF1 3 450 250 100 L 50 50 1 1 I
+X Vdd 4 -450 250 100 R 50 50 1 1 I
+X RFIN 5 -450 150 100 R 50 50 1 1 I
+X CTRL 6 -450 50 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# jcg_custom_parts_ERB-RE5R00V
+#
+DEF jcg_custom_parts_ERB-RE5R00V F 0 40 Y Y 1 F N
+F0 "F" 0 100 60 H V C CNN
+F1 "jcg_custom_parts_ERB-RE5R00V" 0 -100 60 H V C CNN
+F2 "digikey-footprints:0603" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "P15125CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "Circuit Protection" 200 600 60 H I L CNN "Category"
+F6 "Fuses" 200 700 60 H I L CNN "Family"
+F7 "FUSE BOARD MOUNT 5A 32VDC 0603" 200 1000 60 H I L CNN "Description"
+F8 "Panasonic" 200 1100 60 H I L CNN "Manufacturer"
+F9 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 -1799 -1 0 1 0 N 0 0 100 0
+X ~ 1 -200 0 100 R 50 50 1 1 O
+X ~ 2 200 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# jcg_custom_parts_PGB1010402KR
+#
+DEF jcg_custom_parts_PGB1010402KR D 0 40 Y Y 1 F N
+F0 "D" -216 108 60 H V L CNN
+F1 "jcg_custom_parts_PGB1010402KR" 4 -130 60 H V C CNN
+F2 "Diode_SMD:D_0402_1005Metric" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "F2862CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PGB1010402KR" 200 500 60 H I L CNN "MPN"
+F6 "Circuit Protection" 200 600 60 H I L CNN "Category"
+F7 "TVS - Diodes" 200 700 60 H I L CNN "Family"
+F8 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/littelfuse-inc/PGB1010603MR/F2594CT-ND/813072" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TVS DIODE 12V 250V 0402" 200 1000 60 H I L CNN "Description"
+F11 "Littelfuse Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 3 0 1 0 0 0 0 -50 -25 -75 N
+P 3 0 1 0 0 0 0 50 25 75 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+P 4 0 1 0 100 50 100 -50 0 0 100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jcg_custom_parts_PHA-1+
+#
+DEF jcg_custom_parts_PHA-1+ U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H V C CNN
+F1 "jcg_custom_parts_PHA-1+" 0 200 50 H V C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+DRAW
+S -400 150 450 -150 0 1 0 N
+P 4 0 1 0 -100 100 -100 -100 100 0 -100 100 N
+X RF-IN 1 -500 100 100 R 50 50 1 1 I
+X GND 2 -500 0 100 R 50 50 1 1 I
+X RF-OUT 3 550 0 100 L 50 50 1 1 I
+X GND 4 -500 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

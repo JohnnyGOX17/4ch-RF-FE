@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACP3225
+D CMC 500 Ohms @ 100MHz 2A DCR 40 mOhm
+F https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_power_acp3225_en.pdf
+$ENDCMP
+#
+$CMP BGS12SN6
+D Wideband RF (0.05 - 6GHz) SPDT Switch in small package with 0.77mm2 footprint
+F https://www.infineon.com/dgdl/Infineon-BGS12SN6-DS-v01_02-en.pdf?fileId=db3a30433f1b26e8013f2db58bc03856
+$ENDCMP
+#
+$CMP ERB-RE5R00V
+D FUSE BOARD MOUNT 5A 32VDC 0603
+F https://industrial.panasonic.com/cdbs/www-data/pdf/AFA0000/AFA0000C7.pdf
+$ENDCMP
+#
+$CMP PGB1010402KR
+D TVS DIODE 24V 150V 0603
+F https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf
+$ENDCMP
+#
+$CMP PHA-1+
+D SMT Linear Amplifier, 50 - 6000 MHz, 50Ω
+F https://www.minicircuits.com/pdfs/PHA-1+.pdf
+$ENDCMP
+#
+#End Doc Library
