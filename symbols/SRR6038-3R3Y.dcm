@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRR6038-3R3Y
+D FIXED IND 3.3UH 3.5A 20 MOHM SMD
+F https://www.bourns.com/docs/Product-Datasheets/SRR6038.pdf
+$ENDCMP
+#
+#End Doc Library

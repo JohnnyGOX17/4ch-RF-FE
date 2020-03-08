@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74LVC125APWR
+D IC BUF NON-INVERT 3.6V 14TSSOP
+F http://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf
+$ENDCMP
+#
+#End Doc Library

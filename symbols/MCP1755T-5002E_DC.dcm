@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP1755T-5002E_DC
+D IC REG LINEAR 5V 300MA SOT223-5
+F http://ww1.microchip.com/downloads/en/DeviceDoc/25160A.pdf
+$ENDCMP
+#
+#End Doc Library

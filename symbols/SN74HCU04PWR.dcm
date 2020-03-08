@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74HCU04PWR
+D IC INVERTER 6CH 6-INP 14TSSOP
+F http://www.ti.com/lit/ds/symlink/sn74hcu04.pdf
+$ENDCMP
+#
+#End Doc Library

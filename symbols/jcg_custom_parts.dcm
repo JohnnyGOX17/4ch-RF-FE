@@ -10,9 +10,54 @@ D Wideband RF (0.05 - 6GHz) SPDT Switch in small package with 0.77mm2 footprint
 F https://www.infineon.com/dgdl/Infineon-BGS12SN6-DS-v01_02-en.pdf?fileId=db3a30433f1b26e8013f2db58bc03856
 $ENDCMP
 #
+$CMP CSR1206-0R002F1
+D RES 0.002 OHM 1% 1W 1206
+F https://riedon.com/media/pdf/CSR.pdf
+$ENDCMP
+#
+$CMP DEA162300HT-8047A1
+D RF FILTER HIGH PASS 2.4GHZ 0603
+F https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/DEA162300HT-8047A1_Rev1_0.pdf
+$ENDCMP
+#
 $CMP ERB-RE5R00V
 D FUSE BOARD MOUNT 5A 32VDC 0603
 F https://industrial.panasonic.com/cdbs/www-data/pdf/AFA0000/AFA0000C7.pdf
+$ENDCMP
+#
+$CMP HMC544AETR
+D IC RF SWITCH SPDT 4GHZ SOT26
+F https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf
+$ENDCMP
+#
+$CMP LFCN-3000+
+D DC to 3000 MHz 50 Ohm Low Pass Filter
+F https://www.minicircuits.com/pdfs/LFCN-3000+.pdf
+$ENDCMP
+#
+$CMP LP0603A2140ANTR
+D DC to 2.14 GHz 50 Ohm Low Pass Filter
+F http://datasheets.avx.com/lp0603.pdf
+$ENDCMP
+#
+$CMP LPF04023600L
+D DC to 3600 MHz 50 Ohm Low Pass Filter
+F https://media.digikey.com/pdf/Data%20Sheets/American%20Technical%20Ceramics/0402_LPF_Series_DS.pdf
+$ENDCMP
+#
+$CMP MABA-011082
+D 1:1 Transformer Balun 5 - 8000 MHz
+F https://cdn.macom.com/datasheets/MABA-011082.pdf
+$ENDCMP
+#
+$CMP PCAL6416APW
+D IC I/O EXPANDER 16BIT 24TSSOP
+F https://www.nxp.com/docs/en/data-sheet/PCAL6416A.pdf
+$ENDCMP
+#
+$CMP PE43711
+D RF ATTENUATOR 31.5DB 50OHM 24QFN
+F http://www.psemi.com/pdf/datasheets/pe43711ds.pdf
 $ENDCMP
 #
 $CMP PGB1010402KR
@@ -23,6 +68,12 @@ $ENDCMP
 $CMP PHA-1+
 D SMT Linear Amplifier, 50 - 6000 MHz, 50Ω
 F https://www.minicircuits.com/pdfs/PHA-1+.pdf
+$ENDCMP
+#
+$CMP PPTC062LJBN-RC
+D CONN HDR 12POS 0.1 TIN PCB R/A
+K WM17452-ND C-Grid 71308
+F https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf
 $ENDCMP
 #
 #End Doc Library

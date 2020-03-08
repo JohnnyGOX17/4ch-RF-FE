@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP1755ST-5002E_DB
+D IC REG LINEAR 5V 300MA SOT223-3
+F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en560605
+$ENDCMP
+#
+#End Doc Library

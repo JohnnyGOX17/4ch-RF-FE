@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADL5611ARKZ-R7
+D IC AMP W-CDMA 30MHZ-6GHZ SOT89-3
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5611.pdf
+$ENDCMP
+#
+#End Doc Library

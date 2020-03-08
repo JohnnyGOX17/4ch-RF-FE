@@ -3,228 +3,2283 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 2 3
+Sheet 4 7
 Title "4-Channel RF Front End"
-Date "2020-02-28"
+Date "2020-03-08"
 Rev "A"
 Comp "JHU Embedded Systems Lab"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Designer: John Gentile"
 $EndDescr
-$Comp
-L ADL5611ARKZ-R7:ADL5611ARKZ-R7 U?
-U 1 1 5E5BB9AF
-P 6800 3800
-AR Path="/5E5BB9AF" Ref="U?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9AF" Ref="U?"  Part="1" 
-F 0 "U?" H 7600 4187 60  0000 C CNN
-F 1 "ADL5611ARKZ-R7" H 7600 4081 60  0000 C CNN
-F 2 "RK_3" H 7600 4040 60  0001 C CNN
-F 3 "" H 6800 3800 60  0000 C CNN
-	1    6800 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L dk_Coaxial-Connectors-RF:5-1814832-1 J?
 U 1 1 5E5BB9BE
-P 1050 5150
+P 1100 5500
 AR Path="/5E5BB9BE" Ref="J?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9BE" Ref="J?"  Part="1" 
-F 0 "J?" H 1128 5397 60  0000 C CNN
-F 1 "5-1814832-1" H 1128 5291 60  0000 C CNN
-F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 1250 5350 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 1250 5450 60  0001 L CNN
-F 4 "A97594-ND" H 1250 5550 60  0001 L CNN "Digi-Key_PN"
-F 5 "5-1814832-1" H 1250 5650 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 1250 5750 60  0001 L CNN "Category"
-F 7 "Coaxial Connectors (RF)" H 1250 5850 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 1250 5950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 1250 6050 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN SMA JACK STR 50 OHM PCB" H 1250 6150 60  0001 L CNN "Description"
-F 11 "TE Connectivity AMP Connectors" H 1250 6250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1250 6350 60  0001 L CNN "Status"
-	1    1050 5150
+AR Path="/5E5AB76A/5E5BB9BE" Ref="J3"  Part="1" 
+AR Path="/5F1B5C00/5E5BB9BE" Ref="J8"  Part="1" 
+AR Path="/5F1B6B3A/5E5BB9BE" Ref="J18"  Part="1" 
+AR Path="/5F1B6B42/5E5BB9BE" Ref="J13"  Part="1" 
+F 0 "J3" H 1178 5747 60  0000 C CNN
+F 1 "5-1814832-1" H 1178 5641 60  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 1300 5700 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 1300 5800 60  0001 L CNN
+F 4 "A97594-ND" H 1300 5900 60  0001 L CNN "Digi-Key_PN"
+F 5 "5-1814832-1" H 1300 6000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1300 6100 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 1300 6200 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 1300 6300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 1300 6400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50 OHM PCB" H 1300 6500 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 1300 6600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1300 6700 60  0001 L CNN "Status"
+	1    1100 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E5BB9C4
-P 1050 5400
+P 1100 5750
 AR Path="/5E5BB9C4" Ref="#PWR?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9C4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1050 5150 50  0001 C CNN
-F 1 "GND" H 1055 5227 50  0000 C CNN
-F 2 "" H 1050 5400 50  0001 C CNN
-F 3 "" H 1050 5400 50  0001 C CNN
-	1    1050 5400
+AR Path="/5E5AB76A/5E5BB9C4" Ref="#PWR045"  Part="1" 
+AR Path="/5F1B5C00/5E5BB9C4" Ref="#PWR083"  Part="1" 
+AR Path="/5F1B6B3A/5E5BB9C4" Ref="#PWR0159"  Part="1" 
+AR Path="/5F1B6B42/5E5BB9C4" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR045" H 1100 5500 50  0001 C CNN
+F 1 "GND" H 1105 5577 50  0000 C CNN
+F 2 "" H 1100 5750 50  0001 C CNN
+F 3 "" H 1100 5750 50  0001 C CNN
+	1    1100 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 5400 1050 5350
-$Comp
-L jcg_custom_parts:PGB1010402KR D?
-U 1 1 5E5BB9D4
-P 1450 5500
-AR Path="/5E5BB9D4" Ref="D?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9D4" Ref="D?"  Part="1" 
-F 0 "D?" V 1397 5603 60  0000 L CNN
-F 1 "PGB1010402KR" V 1503 5603 60  0000 L CNN
-F 2 "Diode_SMD:D_0402_1005Metric" H 1650 5700 60  0001 L CNN
-F 3 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1650 5800 60  0001 L CNN
-F 4 "F2862CT-ND" H 1650 5900 60  0001 L CNN "Digi-Key_PN"
-F 5 "PGB1010402KR" H 1650 6000 60  0001 L CNN "MPN"
-F 6 "Circuit Protection" H 1650 6100 60  0001 L CNN "Category"
-F 7 "TVS - Diodes" H 1650 6200 60  0001 L CNN "Family"
-F 8 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1650 6300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/littelfuse-inc/PGB1010603MR/F2594CT-ND/813072" H 1650 6400 60  0001 L CNN "DK_Detail_Page"
-F 10 "TVS DIODE 12V 250V 0402" H 1650 6500 60  0001 L CNN "Description"
-F 11 "Littelfuse Inc." H 1650 6600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1650 6700 60  0001 L CNN "Status"
-	1    1450 5500
-	0    1    1    0   
-$EndComp
+	1100 5750 1100 5700
 Wire Wire Line
-	1450 5150 1250 5150
-$Comp
-L power:GND #PWR?
-U 1 1 5E5BB9DB
-P 1450 5800
-AR Path="/5E5BB9DB" Ref="#PWR?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9DB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1450 5550 50  0001 C CNN
-F 1 "GND" H 1455 5627 50  0000 C CNN
-F 2 "" H 1450 5800 50  0001 C CNN
-F 3 "" H 1450 5800 50  0001 C CNN
-	1    1450 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 5800 1450 5700
-$Comp
-L Device:C C?
-U 1 1 5E5BB9E2
-P 1800 5150
-AR Path="/5E5BB9E2" Ref="C?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9E2" Ref="C?"  Part="1" 
-F 0 "C?" V 1548 5150 50  0000 C CNN
-F 1 "470pF" V 1639 5150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" V 1640 5150 50  0001 C CNN
-F 3 "~" H 1800 5150 50  0001 C CNN
-	1    1800 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1450 5300 1450 5150
-Wire Wire Line
-	1450 5150 1650 5150
-Connection ~ 1450 5150
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E5BB9EB
-P 2300 4600
-AR Path="/5E5BB9EB" Ref="#PWR?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9EB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2300 4450 50  0001 C CNN
-F 1 "+3V3" H 2315 4773 50  0000 C CNN
-F 2 "" H 2300 4600 50  0001 C CNN
-F 3 "" H 2300 4600 50  0001 C CNN
-	1    2300 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L jcg_custom_parts:PHA-1+ U?
-U 1 1 5E5BB9F1
-P 6050 5900
-AR Path="/5E5BB9F1" Ref="U?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9F1" Ref="U?"  Part="1" 
-F 0 "U?" H 6075 6225 50  0000 C CNN
-F 1 "PHA-1+" H 6075 6134 50  0000 C CNN
-F 2 "" H 6150 5900 50  0001 C CNN
-F 3 "https://www.minicircuits.com/pdfs/PHA-1+.pdf" H 6150 5900 50  0001 C CNN
-	1    6050 5900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 5150 1950 5150
-Wire Wire Line
-	3550 5150 3550 5200
-Wire Wire Line
-	3350 5150 3550 5150
+	3850 5500 3850 5550
 $Comp
 L power:GND #PWR?
 U 1 1 5E5BB9FA
-P 3550 5200
+P 3850 5550
 AR Path="/5E5BB9FA" Ref="#PWR?"  Part="1" 
-AR Path="/5E5AB76A/5E5BB9FA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3550 4950 50  0001 C CNN
-F 1 "GND" H 3555 5027 50  0000 C CNN
-F 2 "" H 3550 5200 50  0001 C CNN
-F 3 "" H 3550 5200 50  0001 C CNN
-	1    3550 5200
+AR Path="/5E5AB76A/5E5BB9FA" Ref="#PWR051"  Part="1" 
+AR Path="/5F1B5C00/5E5BB9FA" Ref="#PWR089"  Part="1" 
+AR Path="/5F1B6B3A/5E5BB9FA" Ref="#PWR0165"  Part="1" 
+AR Path="/5F1B6B42/5E5BB9FA" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR051" H 3850 5300 50  0001 C CNN
+F 1 "GND" H 3855 5377 50  0000 C CNN
+F 2 "" H 3850 5550 50  0001 C CNN
+F 3 "" H 3850 5550 50  0001 C CNN
+	1    3850 5550
 	1    0    0    -1  
 $EndComp
+Text Notes 8650 6950 0    118  ~ 24
+TX Path
 $Comp
-L jcg_custom_parts:BGS12SN6 U?
-U 1 1 5E5BBA00
-P 2900 5300
-AR Path="/5E5BBA00" Ref="U?"  Part="1" 
-AR Path="/5E5AB76A/5E5BBA00" Ref="U?"  Part="1" 
-F 0 "U?" H 2900 5775 50  0000 C CNN
-F 1 "BGS12SN6" H 2900 5684 50  0000 C CNN
-F 2 "jcg_custom:BGS12SN6" H 2900 5250 50  0001 C CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BGS12SN6-DS-v01_02-en.pdf?fileId=db3a30433f1b26e8013f2db58bc03856" H 2900 5250 50  0001 C CNN
-	1    2900 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L jcg_custom_parts:BGS12SN6 U?
-U 1 1 5E5BBA06
-P 4350 6150
-AR Path="/5E5BBA06" Ref="U?"  Part="1" 
-AR Path="/5E5AB76A/5E5BBA06" Ref="U?"  Part="1" 
-F 0 "U?" H 4350 6625 50  0000 C CNN
-F 1 "BGS12SN6" H 4350 6534 50  0000 C CNN
-F 2 "jcg_custom:BGS12SN6" H 4350 6100 50  0001 C CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BGS12SN6-DS-v01_02-en.pdf?fileId=db3a30433f1b26e8013f2db58bc03856" H 4350 6100 50  0001 C CNN
-	1    4350 6150
+L power:GND #PWR048
+U 1 1 5E5F9A4E
+P 2150 8450
+AR Path="/5E5AB76A/5E5F9A4E" Ref="#PWR048"  Part="1" 
+AR Path="/5F1B5C00/5E5F9A4E" Ref="#PWR086"  Part="1" 
+AR Path="/5F1B6B3A/5E5F9A4E" Ref="#PWR0162"  Part="1" 
+AR Path="/5F1B6B42/5E5F9A4E" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR048" H 2150 8200 50  0001 C CNN
+F 1 "GND" H 2155 8277 50  0000 C CNN
+F 2 "" H 2150 8450 50  0001 C CNN
+F 3 "" H 2150 8450 50  0001 C CNN
+	1    2150 8450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 5250 3400 5250
+	2250 8250 2200 8250
 Wire Wire Line
-	3400 5250 3400 6000
+	2200 8250 2200 8450
 Wire Wire Line
-	3400 6000 3900 6000
+	2200 8450 2150 8450
+Wire Wire Line
+	3500 8250 3550 8250
+Wire Wire Line
+	3550 8250 3550 8450
 $Comp
-L power:GND #PWR?
-U 1 1 5E5BBA0F
-P 5050 6050
-AR Path="/5E5BBA0F" Ref="#PWR?"  Part="1" 
-AR Path="/5E5AB76A/5E5BBA0F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5050 5800 50  0001 C CNN
-F 1 "GND" H 5055 5877 50  0000 C CNN
-F 2 "" H 5050 6050 50  0001 C CNN
-F 3 "" H 5050 6050 50  0001 C CNN
-	1    5050 6050
+L power:GND #PWR046
+U 1 1 5E602D01
+P 1900 8150
+AR Path="/5E5AB76A/5E602D01" Ref="#PWR046"  Part="1" 
+AR Path="/5F1B5C00/5E602D01" Ref="#PWR084"  Part="1" 
+AR Path="/5F1B6B3A/5E602D01" Ref="#PWR0160"  Part="1" 
+AR Path="/5F1B6B42/5E602D01" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR046" H 1900 7900 50  0001 C CNN
+F 1 "GND" H 1905 7977 50  0000 C CNN
+F 2 "" H 1900 8150 50  0001 C CNN
+F 3 "" H 1900 8150 50  0001 C CNN
+	1    1900 8150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 6050 5050 6000
+	1750 8450 2050 8450
 Wire Wire Line
-	5050 6000 4800 6000
+	2050 8150 2250 8150
+Wire Wire Line
+	2250 8050 1900 8050
+Wire Wire Line
+	1900 8050 1900 8150
 $Comp
-L jcg_custom_parts:BGS12SN6 U?
-U 1 1 5E5BBA17
-P 7250 6150
-AR Path="/5E5BBA17" Ref="U?"  Part="1" 
-AR Path="/5E5AB76A/5E5BBA17" Ref="U?"  Part="1" 
-F 0 "U?" H 7250 6625 50  0000 C CNN
-F 1 "BGS12SN6" H 7250 6534 50  0000 C CNN
-F 2 "jcg_custom:BGS12SN6" H 7250 6100 50  0001 C CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BGS12SN6-DS-v01_02-en.pdf?fileId=db3a30433f1b26e8013f2db58bc03856" H 7250 6100 50  0001 C CNN
-	1    7250 6150
+L power:GND #PWR052
+U 1 1 5E60BA1D
+P 3850 8100
+AR Path="/5E5AB76A/5E60BA1D" Ref="#PWR052"  Part="1" 
+AR Path="/5F1B5C00/5E60BA1D" Ref="#PWR090"  Part="1" 
+AR Path="/5F1B6B3A/5E60BA1D" Ref="#PWR0166"  Part="1" 
+AR Path="/5F1B6B42/5E60BA1D" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR052" H 3850 7850 50  0001 C CNN
+F 1 "GND" H 3855 7927 50  0000 C CNN
+F 2 "" H 3850 8100 50  0001 C CNN
+F 3 "" H 3850 8100 50  0001 C CNN
+	1    3850 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 8100 3850 8050
+Wire Wire Line
+	3850 8050 3500 8050
+Wire Wire Line
+	3500 8150 3700 8150
+Wire Wire Line
+	3700 8150 3700 8450
+Wire Wire Line
+	3700 8450 4000 8450
+Wire Wire Line
+	4450 8350 4450 8450
+Connection ~ 4450 8450
+Wire Wire Line
+	4450 8450 4300 8450
+Wire Wire Line
+	4450 8050 4450 7650
+Wire Wire Line
+	4450 7650 4650 7650
+Wire Wire Line
+	4650 7700 4650 7650
+Wire Wire Line
+	4650 8000 4650 8050
+Wire Wire Line
+	4650 7650 5100 7650
+Wire Wire Line
+	5550 7650 5550 7700
+Connection ~ 4650 7650
+Wire Wire Line
+	5100 7700 5100 7650
+Connection ~ 5100 7650
+Wire Wire Line
+	5100 7650 5550 7650
+Wire Wire Line
+	4650 8050 5100 8050
+Wire Wire Line
+	5100 8050 5100 8000
+Wire Wire Line
+	5550 8000 5550 8050
+Wire Wire Line
+	5550 8050 5100 8050
+Connection ~ 5100 8050
+$Comp
+L power:GND #PWR060
+U 1 1 5E6267D9
+P 5650 8100
+AR Path="/5E5AB76A/5E6267D9" Ref="#PWR060"  Part="1" 
+AR Path="/5F1B5C00/5E6267D9" Ref="#PWR098"  Part="1" 
+AR Path="/5F1B6B3A/5E6267D9" Ref="#PWR0174"  Part="1" 
+AR Path="/5F1B6B42/5E6267D9" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR060" H 5650 7850 50  0001 C CNN
+F 1 "GND" H 5655 7927 50  0000 C CNN
+F 2 "" H 5650 8100 50  0001 C CNN
+F 3 "" H 5650 8100 50  0001 C CNN
+	1    5650 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 8100 5650 8050
+Wire Wire Line
+	5650 8050 5550 8050
+Connection ~ 5550 8050
+Wire Wire Line
+	4900 8850 4700 8850
+Wire Wire Line
+	4700 8850 4700 8450
+Wire Wire Line
+	4450 8450 4700 8450
+$Comp
+L power:GND #PWR055
+U 1 1 5E62AFB4
+P 4800 9300
+AR Path="/5E5AB76A/5E62AFB4" Ref="#PWR055"  Part="1" 
+AR Path="/5F1B5C00/5E62AFB4" Ref="#PWR093"  Part="1" 
+AR Path="/5F1B6B3A/5E62AFB4" Ref="#PWR0169"  Part="1" 
+AR Path="/5F1B6B42/5E62AFB4" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR055" H 4800 9050 50  0001 C CNN
+F 1 "GND" H 4805 9127 50  0000 C CNN
+F 2 "" H 4800 9300 50  0001 C CNN
+F 3 "" H 4800 9300 50  0001 C CNN
+	1    4800 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 9250 4800 9250
+Wire Wire Line
+	4800 9250 4800 9300
+Connection ~ 4450 7650
+Wire Wire Line
+	1450 8450 1050 8450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E691E2C
+P 3750 7100
+AR Path="/5E691E2C" Ref="#PWR?"  Part="1" 
+AR Path="/5E5AB76A/5E691E2C" Ref="#PWR050"  Part="1" 
+AR Path="/5F1B5C00/5E691E2C" Ref="#PWR088"  Part="1" 
+AR Path="/5F1B6B3A/5E691E2C" Ref="#PWR0164"  Part="1" 
+AR Path="/5F1B6B42/5E691E2C" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR050" H 3750 6950 50  0001 C CNN
+F 1 "+3V3" H 3765 7273 50  0000 C CNN
+F 2 "" H 3750 7100 50  0001 C CNN
+F 3 "" H 3750 7100 50  0001 C CNN
+	1    3750 7100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR053
+U 1 1 5E693691
+P 3950 7650
+AR Path="/5E5AB76A/5E693691" Ref="#PWR053"  Part="1" 
+AR Path="/5F1B5C00/5E693691" Ref="#PWR091"  Part="1" 
+AR Path="/5F1B6B3A/5E693691" Ref="#PWR0167"  Part="1" 
+AR Path="/5F1B6B42/5E693691" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR053" H 3950 7400 50  0001 C CNN
+F 1 "GND" H 3955 7477 50  0000 C CNN
+F 2 "" H 3950 7650 50  0001 C CNN
+F 3 "" H 3950 7650 50  0001 C CNN
+	1    3950 7650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7550 3950 7650
+Wire Wire Line
+	3750 7100 3750 7200
+Wire Wire Line
+	3750 7200 3950 7200
+Wire Wire Line
+	3950 7200 3950 7250
+Connection ~ 3750 7200
+Wire Wire Line
+	7100 8850 6950 8850
+Wire Wire Line
+	6650 8850 6500 8850
+Wire Wire Line
+	7250 9200 7250 9250
+Wire Wire Line
+	7250 9250 7500 9250
+Wire Wire Line
+	7800 9250 7800 9200
+$Comp
+L power:GND #PWR063
+U 1 1 5E6A6D40
+P 7500 9300
+AR Path="/5E5AB76A/5E6A6D40" Ref="#PWR063"  Part="1" 
+AR Path="/5F1B5C00/5E6A6D40" Ref="#PWR0101"  Part="1" 
+AR Path="/5F1B6B3A/5E6A6D40" Ref="#PWR0177"  Part="1" 
+AR Path="/5F1B6B42/5E6A6D40" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR063" H 7500 9050 50  0001 C CNN
+F 1 "GND" H 7505 9127 50  0000 C CNN
+F 2 "" H 7500 9300 50  0001 C CNN
+F 3 "" H 7500 9300 50  0001 C CNN
+	1    7500 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 8850 7950 8850
+$Comp
+L power:GND #PWR064
+U 1 1 5E6BE061
+P 8400 9150
+AR Path="/5E5AB76A/5E6BE061" Ref="#PWR064"  Part="1" 
+AR Path="/5F1B5C00/5E6BE061" Ref="#PWR0102"  Part="1" 
+AR Path="/5F1B6B3A/5E6BE061" Ref="#PWR0178"  Part="1" 
+AR Path="/5F1B6B42/5E6BE061" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR064" H 8400 8900 50  0001 C CNN
+F 1 "GND" H 8405 8977 50  0000 C CNN
+F 2 "" H 8400 9150 50  0001 C CNN
+F 3 "" H 8400 9150 50  0001 C CNN
+	1    8400 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR065
+U 1 1 5E6BE85E
+P 9100 9150
+AR Path="/5E5AB76A/5E6BE85E" Ref="#PWR065"  Part="1" 
+AR Path="/5F1B5C00/5E6BE85E" Ref="#PWR0103"  Part="1" 
+AR Path="/5F1B6B3A/5E6BE85E" Ref="#PWR0179"  Part="1" 
+AR Path="/5F1B6B42/5E6BE85E" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR065" H 9100 8900 50  0001 C CNN
+F 1 "GND" H 9105 8977 50  0000 C CNN
+F 2 "" H 9100 9150 50  0001 C CNN
+F 3 "" H 9100 9150 50  0001 C CNN
+	1    9100 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 9050 9100 9050
+Wire Wire Line
+	9100 9050 9100 9150
+Wire Wire Line
+	8500 8950 8400 8950
+Wire Wire Line
+	8400 8950 8400 9050
+Wire Wire Line
+	8500 9050 8400 9050
+Connection ~ 8400 9050
+Wire Wire Line
+	8400 9050 8400 9150
+$Comp
+L dk_Coaxial-Connectors-RF:5-1814832-1 J?
+U 1 1 5E6C4E9C
+P 10600 8850
+AR Path="/5E6C4E9C" Ref="J?"  Part="1" 
+AR Path="/5E5AB76A/5E6C4E9C" Ref="J4"  Part="1" 
+AR Path="/5F1B5C00/5E6C4E9C" Ref="J9"  Part="1" 
+AR Path="/5F1B6B3A/5E6C4E9C" Ref="J19"  Part="1" 
+AR Path="/5F1B6B42/5E6C4E9C" Ref="J14"  Part="1" 
+F 0 "J4" H 10678 9097 60  0000 C CNN
+F 1 "5-1814832-1" H 10678 8991 60  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 10800 9050 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 10800 9150 60  0001 L CNN
+F 4 "A97594-ND" H 10800 9250 60  0001 L CNN "Digi-Key_PN"
+F 5 "5-1814832-1" H 10800 9350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 10800 9450 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 10800 9550 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 10800 9650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 10800 9750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50 OHM PCB" H 10800 9850 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 10800 9950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10800 10050 60  0001 L CNN "Status"
+	1    10600 8850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5500 1700 5500
+$Comp
+L dk_Coaxial-Connectors-RF:5-1814832-1 J?
+U 1 1 5E6CD955
+P 10600 9750
+AR Path="/5E6CD955" Ref="J?"  Part="1" 
+AR Path="/5E5AB76A/5E6CD955" Ref="J5"  Part="1" 
+AR Path="/5F1B5C00/5E6CD955" Ref="J10"  Part="1" 
+AR Path="/5F1B6B3A/5E6CD955" Ref="J20"  Part="1" 
+AR Path="/5F1B6B42/5E6CD955" Ref="J15"  Part="1" 
+F 0 "J5" H 10678 9997 60  0000 C CNN
+F 1 "5-1814832-1" H 10678 9891 60  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 10800 9950 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 10800 10050 60  0001 L CNN
+F 4 "A97594-ND" H 10800 10150 60  0001 L CNN "Digi-Key_PN"
+F 5 "5-1814832-1" H 10800 10250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 10800 10350 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 10800 10450 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 10800 10550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 10800 10650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50 OHM PCB" H 10800 10750 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 10800 10850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10800 10950 60  0001 L CNN "Status"
+	1    10600 9750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 5E6CF301
+P 10600 9100
+AR Path="/5E5AB76A/5E6CF301" Ref="#PWR068"  Part="1" 
+AR Path="/5F1B5C00/5E6CF301" Ref="#PWR0106"  Part="1" 
+AR Path="/5F1B6B3A/5E6CF301" Ref="#PWR0182"  Part="1" 
+AR Path="/5F1B6B42/5E6CF301" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR068" H 10600 8850 50  0001 C CNN
+F 1 "GND" H 10605 8927 50  0000 C CNN
+F 2 "" H 10600 9100 50  0001 C CNN
+F 3 "" H 10600 9100 50  0001 C CNN
+	1    10600 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR069
+U 1 1 5E6CF975
+P 10600 10000
+AR Path="/5E5AB76A/5E6CF975" Ref="#PWR069"  Part="1" 
+AR Path="/5F1B5C00/5E6CF975" Ref="#PWR0107"  Part="1" 
+AR Path="/5F1B6B3A/5E6CF975" Ref="#PWR0183"  Part="1" 
+AR Path="/5F1B6B42/5E6CF975" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR069" H 10600 9750 50  0001 C CNN
+F 1 "GND" H 10605 9827 50  0000 C CNN
+F 2 "" H 10600 10000 50  0001 C CNN
+F 3 "" H 10600 10000 50  0001 C CNN
+	1    10600 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 8850 9000 8850
+Wire Wire Line
+	10050 8850 10400 8850
+Wire Wire Line
+	10600 9100 10600 9050
+Wire Wire Line
+	10600 9950 10600 10000
+Wire Wire Line
+	10400 9750 10050 9750
+Wire Wire Line
+	9750 9750 9450 9750
+Wire Wire Line
+	9450 9750 9450 8950
+Wire Wire Line
+	9450 8950 9000 8950
+Text Notes 10800 9400 0    50   ~ 10
+TX Differential Input
+Text Notes 6750 9650 0    50   Italic 0
+LPF Passband (-1dB): 0 - 3.6 GHz
+Text Notes 5200 9800 0    50   Italic 0
+Gain: 22.2 dB\nBW: 30 - 6000 MHz\nP1dB: 21.0 dBm @ 900 MHz\nOIP3: 40.0 dBm @ 900 MHz
+Text Notes 4750 7550 0    50   Italic 0
+DC Bias Max Power Draw: 124 mA
+$Comp
+L Device:L L3
+U 1 1 5E6E77BB
+P 3400 1700
+AR Path="/5E5AB76A/5E6E77BB" Ref="L3"  Part="1" 
+AR Path="/5F1B5C00/5E6E77BB" Ref="L5"  Part="1" 
+AR Path="/5F1B6B3A/5E6E77BB" Ref="L9"  Part="1" 
+AR Path="/5F1B6B42/5E6E77BB" Ref="L7"  Part="1" 
+F 0 "L3" H 3453 1746 50  0000 L CNN
+F 1 "43nH" H 3453 1655 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3400 1700 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-0024.pdf" H 3400 1700 50  0001 C CNN
+F 4 "490-6892-1-ND" H 3400 1700 50  0001 C CNN "Digi-Key PN"
+F 5 "FIXED IND 43NH 380MA 290 MOHM" H 3400 1700 50  0001 C CNN "Description"
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 5E6E77C5
+P 3600 1350
+AR Path="/5E5AB76A/5E6E77C5" Ref="C37"  Part="1" 
+AR Path="/5F1B5C00/5E6E77C5" Ref="C63"  Part="1" 
+AR Path="/5F1B6B3A/5E6E77C5" Ref="C115"  Part="1" 
+AR Path="/5F1B6B42/5E6E77C5" Ref="C89"  Part="1" 
+F 0 "C37" H 3715 1396 50  0000 L CNN
+F 1 "68pF" H 3715 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 1200 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C680K5RAC7867.pdf" H 3600 1350 50  0001 C CNN
+F 4 "399-19382-1-ND" H 3600 1350 50  0001 C CNN "Digi-Key PN"
+F 5 "68pF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 3600 1350 50  0001 C CNN "Description"
+	1    3600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C39
+U 1 1 5E6E77CF
+P 4050 1350
+AR Path="/5E5AB76A/5E6E77CF" Ref="C39"  Part="1" 
+AR Path="/5F1B5C00/5E6E77CF" Ref="C65"  Part="1" 
+AR Path="/5F1B6B3A/5E6E77CF" Ref="C117"  Part="1" 
+AR Path="/5F1B6B42/5E6E77CF" Ref="C91"  Part="1" 
+F 0 "C39" H 4165 1396 50  0000 L CNN
+F 1 "1.2nF" H 4165 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4088 1200 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C122K5RACTU.pdf" H 4050 1350 50  0001 C CNN
+F 4 "399-7851-1-ND" H 4050 1350 50  0001 C CNN "Digi-Key PN"
+F 5 "1200pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" H 4050 1350 50  0001 C CNN "Description"
+	1    4050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C42
+U 1 1 5E6E77D9
+P 4500 1350
+AR Path="/5E5AB76A/5E6E77D9" Ref="C42"  Part="1" 
+AR Path="/5F1B5C00/5E6E77D9" Ref="C68"  Part="1" 
+AR Path="/5F1B6B3A/5E6E77D9" Ref="C120"  Part="1" 
+AR Path="/5F1B6B42/5E6E77D9" Ref="C94"  Part="1" 
+F 0 "C42" H 4615 1396 50  0000 L CNN
+F 1 "1µF" H 4615 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4615 1259 50  0001 L CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KA8NFNC.jsp" H 4500 1350 50  0001 C CNN
+F 4 "1276-1942-1-ND" H 4500 1350 50  0001 C CNN "Digi-Key PN"
+F 5 "1µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)" H 4500 1350 50  0001 C CNN "Description"
+	1    4500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1850 3400 1950
+Connection ~ 3400 1950
+Wire Wire Line
+	3400 1950 3250 1950
+Wire Wire Line
+	3400 1550 3400 1150
+Wire Wire Line
+	3400 1150 3600 1150
+Wire Wire Line
+	3600 1200 3600 1150
+Wire Wire Line
+	3600 1500 3600 1550
+Wire Wire Line
+	3600 1150 4050 1150
+Wire Wire Line
+	4500 1150 4500 1200
+Connection ~ 3600 1150
+Wire Wire Line
+	4050 1200 4050 1150
+Connection ~ 4050 1150
+Wire Wire Line
+	4050 1150 4500 1150
+Wire Wire Line
+	3600 1550 4050 1550
+Wire Wire Line
+	4050 1550 4050 1500
+Wire Wire Line
+	4500 1500 4500 1550
+Wire Wire Line
+	4500 1550 4050 1550
+Connection ~ 4050 1550
+$Comp
+L power:GND #PWR054
+U 1 1 5E6E77F5
+P 4600 1600
+AR Path="/5E5AB76A/5E6E77F5" Ref="#PWR054"  Part="1" 
+AR Path="/5F1B5C00/5E6E77F5" Ref="#PWR092"  Part="1" 
+AR Path="/5F1B6B3A/5E6E77F5" Ref="#PWR0168"  Part="1" 
+AR Path="/5F1B6B42/5E6E77F5" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR054" H 4600 1350 50  0001 C CNN
+F 1 "GND" H 4605 1427 50  0000 C CNN
+F 2 "" H 4600 1600 50  0001 C CNN
+F 3 "" H 4600 1600 50  0001 C CNN
+	1    4600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1600 4600 1550
+Wire Wire Line
+	4600 1550 4500 1550
+Connection ~ 4500 1550
+$Comp
+L power:GND #PWR049
+U 1 1 5E6E7805
+P 3400 2450
+AR Path="/5E5AB76A/5E6E7805" Ref="#PWR049"  Part="1" 
+AR Path="/5F1B5C00/5E6E7805" Ref="#PWR087"  Part="1" 
+AR Path="/5F1B6B3A/5E6E7805" Ref="#PWR0163"  Part="1" 
+AR Path="/5F1B6B42/5E6E7805" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR049" H 3400 2200 50  0001 C CNN
+F 1 "GND" H 3405 2277 50  0000 C CNN
+F 2 "" H 3400 2450 50  0001 C CNN
+F 3 "" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 1150
+Text Notes 1950 2900 0    50   Italic 0
+Gain: 22.2 dB\nBW: 30 - 6000 MHz\nP1dB: 21.0 dBm @ 900 MHz\nOIP3: 40.0 dBm @ 900 MHz
+Text Notes 3700 1050 0    50   Italic 0
+DC Bias Max Power Draw: 124 mA
+Wire Wire Line
+	1650 1950 1450 1950
+Wire Wire Line
+	1150 1950 950  1950
+Wire Wire Line
+	3250 2350 3400 2350
+Wire Wire Line
+	3400 2350 3400 2450
+$Comp
+L power:GND #PWR059
+U 1 1 5E72FA6A
+P 5550 2950
+AR Path="/5E5AB76A/5E72FA6A" Ref="#PWR059"  Part="1" 
+AR Path="/5F1B5C00/5E72FA6A" Ref="#PWR097"  Part="1" 
+AR Path="/5F1B6B3A/5E72FA6A" Ref="#PWR0173"  Part="1" 
+AR Path="/5F1B6B42/5E72FA6A" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR059" H 5550 2700 50  0001 C CNN
+F 1 "GND" H 5555 2777 50  0000 C CNN
+F 2 "" H 5550 2950 50  0001 C CNN
+F 3 "" H 5550 2950 50  0001 C CNN
+	1    5550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2750 5600 2750
+Wire Wire Line
+	5600 2750 5600 2950
+Wire Wire Line
+	5600 2950 5550 2950
+Wire Wire Line
+	6050 2900 6050 2950
+Wire Wire Line
+	6050 2950 5600 2950
+Connection ~ 5600 2950
+Wire Wire Line
+	6050 2950 6150 2950
+Wire Wire Line
+	6150 2950 6150 2900
+Connection ~ 6050 2950
+Wire Wire Line
+	6250 2900 6250 2950
+Wire Wire Line
+	6250 2950 6150 2950
+Connection ~ 6150 2950
+Wire Wire Line
+	6350 2900 6350 2950
+Wire Wire Line
+	6350 2950 6250 2950
+Connection ~ 6250 2950
+Wire Wire Line
+	6450 2900 6450 2950
+Wire Wire Line
+	6450 2950 6350 2950
+Connection ~ 6350 2950
+Wire Wire Line
+	6550 2900 6550 2950
+Wire Wire Line
+	6550 2950 6450 2950
+Connection ~ 6450 2950
+Wire Wire Line
+	6900 2750 6950 2750
+Wire Wire Line
+	6950 2750 6950 2950
+Wire Wire Line
+	6950 2950 6550 2950
+Connection ~ 6550 2950
+$Comp
+L power:GND #PWR058
+U 1 1 5E72FA8D
+P 5300 2650
+AR Path="/5E5AB76A/5E72FA8D" Ref="#PWR058"  Part="1" 
+AR Path="/5F1B5C00/5E72FA8D" Ref="#PWR096"  Part="1" 
+AR Path="/5F1B6B3A/5E72FA8D" Ref="#PWR0172"  Part="1" 
+AR Path="/5F1B6B42/5E72FA8D" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR058" H 5300 2400 50  0001 C CNN
+F 1 "GND" H 5305 2477 50  0000 C CNN
+F 2 "" H 5300 2650 50  0001 C CNN
+F 3 "" H 5300 2650 50  0001 C CNN
+	1    5300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2950 5450 2650
+Wire Wire Line
+	5450 2650 5650 2650
+Wire Wire Line
+	5650 2550 5300 2550
+Wire Wire Line
+	5300 2550 5300 2650
+Wire Wire Line
+	5650 2450 5300 2450
+Wire Wire Line
+	5300 2450 5300 2550
+Connection ~ 5300 2550
+$Comp
+L power:GND #PWR067
+U 1 1 5E72FAA9
+P 10350 3500
+AR Path="/5E5AB76A/5E72FAA9" Ref="#PWR067"  Part="1" 
+AR Path="/5F1B5C00/5E72FAA9" Ref="#PWR0105"  Part="1" 
+AR Path="/5F1B6B3A/5E72FAA9" Ref="#PWR0181"  Part="1" 
+AR Path="/5F1B6B42/5E72FAA9" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR067" H 10350 3250 50  0001 C CNN
+F 1 "GND" H 10355 3327 50  0000 C CNN
+F 2 "" H 10350 3500 50  0001 C CNN
+F 3 "" H 10350 3500 50  0001 C CNN
+	1    10350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2600 7250 2550
+Wire Wire Line
+	7250 2550 6900 2550
+Wire Wire Line
+	6900 2650 7100 2650
+Wire Wire Line
+	7100 2650 7100 2950
+Wire Wire Line
+	7100 2950 7400 2950
+$Comp
+L power:GND #PWR061
+U 1 1 5E72FAB9
+P 7100 2100
+AR Path="/5E5AB76A/5E72FAB9" Ref="#PWR061"  Part="1" 
+AR Path="/5F1B5C00/5E72FAB9" Ref="#PWR099"  Part="1" 
+AR Path="/5F1B6B3A/5E72FAB9" Ref="#PWR0175"  Part="1" 
+AR Path="/5F1B6B42/5E72FAB9" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR061" H 7100 1850 50  0001 C CNN
+F 1 "GND" H 7105 1927 50  0000 C CNN
+F 2 "" H 7100 2100 50  0001 C CNN
+F 3 "" H 7100 2100 50  0001 C CNN
+	1    7100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2100 7100 2000
+Wire Wire Line
+	7100 2000 6950 2000
+Wire Wire Line
+	6950 2000 6950 2250
+Wire Wire Line
+	6950 2250 6900 2250
+Wire Wire Line
+	6900 2350 6950 2350
+Wire Wire Line
+	6950 2350 6950 2250
+Connection ~ 6950 2250
+Wire Wire Line
+	2050 8150 2050 8450
+Wire Wire Line
+	2200 8450 2600 8450
+Wire Wire Line
+	3100 8450 3100 8400
+Connection ~ 2200 8450
+Wire Wire Line
+	3000 8400 3000 8450
+Connection ~ 3000 8450
+Wire Wire Line
+	3000 8450 3100 8450
+Wire Wire Line
+	2900 8400 2900 8450
+Connection ~ 2900 8450
+Wire Wire Line
+	2900 8450 3000 8450
+Wire Wire Line
+	2800 8400 2800 8450
+Connection ~ 2800 8450
+Wire Wire Line
+	2800 8450 2900 8450
+Wire Wire Line
+	2700 8400 2700 8450
+Connection ~ 2700 8450
+Wire Wire Line
+	2700 8450 2800 8450
+Wire Wire Line
+	2600 8400 2600 8450
+Connection ~ 2600 8450
+Wire Wire Line
+	2600 8450 2700 8450
+Wire Wire Line
+	3500 7950 3850 7950
+Wire Wire Line
+	3850 7950 3850 8050
+Connection ~ 3850 8050
+Wire Wire Line
+	3750 7850 3500 7850
+Wire Wire Line
+	3750 7200 3750 7850
+$Comp
+L power:GND #PWR047
+U 1 1 5E792EB9
+P 2050 7600
+AR Path="/5E5AB76A/5E792EB9" Ref="#PWR047"  Part="1" 
+AR Path="/5F1B5C00/5E792EB9" Ref="#PWR085"  Part="1" 
+AR Path="/5F1B6B3A/5E792EB9" Ref="#PWR0161"  Part="1" 
+AR Path="/5F1B6B42/5E792EB9" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR047" H 2050 7350 50  0001 C CNN
+F 1 "GND" H 2055 7427 50  0000 C CNN
+F 2 "" H 2050 7600 50  0001 C CNN
+F 3 "" H 2050 7600 50  0001 C CNN
+	1    2050 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 7850 2200 7850
+Wire Wire Line
+	2200 7850 2200 7750
+Wire Wire Line
+	2200 7500 2050 7500
+Wire Wire Line
+	2050 7500 2050 7600
+Wire Wire Line
+	2250 7750 2200 7750
+Connection ~ 2200 7750
+Wire Wire Line
+	2200 7750 2200 7500
+Wire Wire Line
+	3550 8450 3100 8450
+Connection ~ 3100 8450
+Text Label 1050 8450 2    50   Italic 0
+TX_OUT
+Text HLabel 2150 5850 0    50   Input Italic 0
+~RX~_TX_SW
+Text Notes 2550 6050 0    50   Italic 0
+RFC-RF1: A=0,B=1\nRFC-RF2: A=1,B=0\nP1dB  = 39 dBm\nt_switch  = 30 ns
+$Comp
+L jcg_custom_parts:HMC544AETR U13
+U 1 1 5E8B9401
+P 3000 5650
+AR Path="/5E5AB76A/5E8B9401" Ref="U13"  Part="1" 
+AR Path="/5F1B5C00/5E8B9401" Ref="U21"  Part="1" 
+AR Path="/5F1B6B3A/5E8B9401" Ref="U37"  Part="1" 
+AR Path="/5F1B6B42/5E8B9401" Ref="U29"  Part="1" 
+F 0 "U13" H 3000 6215 50  0000 C CNN
+F 1 "HMC544AETR" H 3000 6124 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 3050 5250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf" H 3000 5600 50  0001 C CNN
+F 4 "1127-1856-1-ND" H 3000 6125 50  0001 C CNN "Digi-Key PN"
+F 5 "IC RF SWITCH SPDT 4GHZ SOT26" H 3000 6033 50  0000 C CNN "Description"
+	1    3000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5500 2000 5500
+Wire Wire Line
+	3850 5500 3450 5500
+$Comp
+L Device:C C?
+U 1 1 5E8DDAA1
+P 1300 1950
+AR Path="/5E8DDAA1" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E8DDAA1" Ref="C34"  Part="1" 
+AR Path="/5F1B5C00/5E8DDAA1" Ref="C60"  Part="1" 
+AR Path="/5F1B6B3A/5E8DDAA1" Ref="C112"  Part="1" 
+AR Path="/5F1B6B42/5E8DDAA1" Ref="C86"  Part="1" 
+F 0 "C34" V 1048 1950 50  0000 C CNN
+F 1 "330pF" V 1139 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 1140 1950 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 1300 1950 50  0001 C CNN
+F 4 "399-7787-1-ND" V 1300 1950 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 1300 1950 50  0001 C CNN "Description"
+	1    1300 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2950 5450 2950
+Wire Wire Line
+	3400 1950 3900 1950
+Wire Wire Line
+	4200 1950 4450 1950
+Wire Wire Line
+	4450 1950 4450 2950
+$Comp
+L jcg_custom_parts:PCAL6416APW U18
+U 1 1 5E9AD65A
+P 13900 7800
+AR Path="/5E5AB76A/5E9AD65A" Ref="U18"  Part="1" 
+AR Path="/5F1B5C00/5E9AD65A" Ref="U26"  Part="1" 
+AR Path="/5F1B6B3A/5E9AD65A" Ref="U42"  Part="1" 
+AR Path="/5F1B6B42/5E9AD65A" Ref="U34"  Part="1" 
+F 0 "U18" H 13900 7050 118 0000 C CNN
+F 1 "PCAL6416APW" H 13900 8500 118 0000 C CNN
+F 2 "digikey-footprints:TSSOP-24_W4.40mm" H 14000 9000 118 0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCAL6416A.pdf" H 13950 8000 118 0001 C CNN
+F 4 "568-9922-1-ND" H 13900 6750 118 0001 C CNN "Digi-Key PN"
+F 5 "IC I/O EXPANDER 16BIT 24TSSOP" H 14250 9250 118 0001 C CNB "Description"
+	1    13900 7800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13250 7300
+Text Label 6650 1350 0    50   Italic 0
+C0.25_RX
+Text Label 6650 1450 0    50   Italic 0
+C0.5_RX
+Text Label 6650 1550 0    50   Italic 0
+C1_RX
+Text Label 6650 1650 0    50   Italic 0
+C2_RX
+Text Label 6650 1750 0    50   Italic 0
+C4_RX
+Text Label 6650 1850 0    50   Italic 0
+C8_RX
+Text Label 6650 1950 0    50   Italic 0
+C16_RX
+Wire Wire Line
+	6650 1450 6050 1450
+Wire Wire Line
+	6050 1450 6050 2050
+Wire Wire Line
+	6650 1550 6150 1550
+Wire Wire Line
+	6150 1550 6150 2050
+Wire Wire Line
+	6650 1650 6250 1650
+Wire Wire Line
+	6250 1650 6250 2050
+Wire Wire Line
+	6650 1750 6350 1750
+Wire Wire Line
+	6350 1750 6350 2050
+Wire Wire Line
+	6650 1850 6450 1850
+Wire Wire Line
+	6450 1850 6450 2050
+Wire Wire Line
+	6650 1950 6550 1950
+Wire Wire Line
+	6550 1950 6550 2050
+Text Label 7350 2450 0    50   Italic 0
+LE_RX
+Wire Wire Line
+	7350 2450 6900 2450
+Text Label 3750 5900 0    50   Italic 0
+TX_OUT
+Wire Wire Line
+	3450 5600 3650 5600
+Wire Wire Line
+	3650 5600 3650 5900
+Wire Wire Line
+	3650 5900 3750 5900
+Text Label 3750 5400 0    50   Italic 0
+RX_IN
+Wire Wire Line
+	3750 5400 3450 5400
+Text Label 13050 7800 2    50   Italic 0
+C0.5_RX
+Text Label 13050 7900 2    50   Italic 0
+C1_RX
+Text Label 13050 8000 2    50   Italic 0
+C2_RX
+Text Label 13050 8100 2    50   Italic 0
+C4_RX
+Text Label 13050 8200 2    50   Italic 0
+C8_RX
+Text Label 13050 8300 2    50   Italic 0
+C16_RX
+Text Label 13050 7700 2    50   Italic 0
+C0.25_RX
+Text Label 13050 7600 2    50   Italic 0
+LE_RX
+Wire Wire Line
+	13050 8300 13250 8300
+Wire Wire Line
+	13050 8200 13250 8200
+Wire Wire Line
+	13050 8100 13250 8100
+Wire Wire Line
+	13050 8000 13250 8000
+Wire Wire Line
+	13050 7900 13250 7900
+Wire Wire Line
+	13050 7800 13250 7800
+Wire Wire Line
+	13050 7700 13250 7700
+Wire Wire Line
+	13050 7600 13250 7600
+$Comp
+L power:GND #PWR076
+U 1 1 5EA753A9
+P 13100 8450
+AR Path="/5E5AB76A/5EA753A9" Ref="#PWR076"  Part="1" 
+AR Path="/5F1B5C00/5EA753A9" Ref="#PWR0114"  Part="1" 
+AR Path="/5F1B6B3A/5EA753A9" Ref="#PWR0190"  Part="1" 
+AR Path="/5F1B6B42/5EA753A9" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR076" H 13100 8200 50  0001 C CNN
+F 1 "GND" H 13105 8277 50  0000 C CNN
+F 2 "" H 13100 8450 50  0001 C CNN
+F 3 "" H 13100 8450 50  0001 C CNN
+	1    13100 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 8400 13100 8400
+Wire Wire Line
+	13100 8400 13100 8450
+Text Label 950  1950 2    50   Italic 0
+RX_IN
+Text Label 2500 6900 2    50   Italic 0
+C0.5_TX
+Text Label 2500 7000 2    50   Italic 0
+C1_TX
+Text Label 2500 7100 2    50   Italic 0
+C2_TX
+Text Label 2500 7200 2    50   Italic 0
+C4_TX
+Text Label 2500 7300 2    50   Italic 0
+C8_TX
+Text Label 2500 7400 2    50   Italic 0
+C16_TX
+Wire Wire Line
+	2500 6900 3100 6900
+Wire Wire Line
+	2500 7000 3000 7000
+Wire Wire Line
+	2500 7100 2900 7100
+Wire Wire Line
+	2500 7200 2800 7200
+Wire Wire Line
+	2500 7300 2700 7300
+Wire Wire Line
+	2500 7400 2600 7400
+Text Label 2500 6800 2    50   Italic 0
+C0.25_TX
+Wire Wire Line
+	2500 6800 3550 6800
+Wire Wire Line
+	3550 6800 3550 7750
+Wire Wire Line
+	3550 7750 3500 7750
+Wire Wire Line
+	3100 6900 3100 7550
+Wire Wire Line
+	3000 7000 3000 7550
+Wire Wire Line
+	2900 7100 2900 7550
+Wire Wire Line
+	2800 7200 2800 7550
+Wire Wire Line
+	2700 7300 2700 7550
+Wire Wire Line
+	2600 7400 2600 7550
+Text Label 1900 7950 2    50   Italic 0
+LE_TX
+Wire Wire Line
+	1900 7950 2250 7950
+Text Label 14750 7500 0    50   Italic 0
+C0.5_TX
+Text Label 14750 7600 0    50   Italic 0
+C1_TX
+Text Label 14750 7700 0    50   Italic 0
+C2_TX
+Text Label 14750 7800 0    50   Italic 0
+C4_TX
+Text Label 14750 7900 0    50   Italic 0
+C8_TX
+Text Label 14750 8000 0    50   Italic 0
+C16_TX
+Text Label 14750 7400 0    50   Italic 0
+C0.25_TX
+Wire Wire Line
+	14750 7400 14550 7400
+Wire Wire Line
+	14550 7500 14750 7500
+Wire Wire Line
+	14750 7600 14550 7600
+Wire Wire Line
+	14550 7700 14750 7700
+Wire Wire Line
+	14750 7800 14550 7800
+Wire Wire Line
+	14550 7900 14750 7900
+Wire Wire Line
+	14750 8000 14550 8000
+Text Label 14750 7300 0    50   Italic 0
+LE_TX
+Wire Wire Line
+	14750 7300 14550 7300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EBC61CD
+P 15650 8050
+AR Path="/5EBC61CD" Ref="#PWR?"  Part="1" 
+AR Path="/5E5AB76A/5EBC61CD" Ref="#PWR082"  Part="1" 
+AR Path="/5F1B5C00/5EBC61CD" Ref="#PWR0120"  Part="1" 
+AR Path="/5F1B6B3A/5EBC61CD" Ref="#PWR0196"  Part="1" 
+AR Path="/5F1B6B42/5EBC61CD" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR082" H 15650 7900 50  0001 C CNN
+F 1 "+3V3" H 15665 8223 50  0000 C CNN
+F 2 "" H 15650 8050 50  0001 C CNN
+F 3 "" H 15650 8050 50  0001 C CNN
+	1    15650 8050
+	-1   0    0    -1  
+$EndComp
+Text HLabel 14750 8200 2    50   Input Italic 0
+I2C_SCL_ATTN
+Text HLabel 14750 8300 2    50   BiDi Italic 0
+I2C_SDA_ATTN
+Wire Wire Line
+	14750 8200 14550 8200
+Wire Wire Line
+	14550 8300 14750 8300
+Text Notes 13650 8850 0    50   Italic 10
+ADDR: 0x20
+$Comp
+L power:GND #PWR080
+U 1 1 5EC0E54E
+P 15350 7850
+AR Path="/5E5AB76A/5EC0E54E" Ref="#PWR080"  Part="1" 
+AR Path="/5F1B5C00/5EC0E54E" Ref="#PWR0118"  Part="1" 
+AR Path="/5F1B6B3A/5EC0E54E" Ref="#PWR0194"  Part="1" 
+AR Path="/5F1B6B42/5EC0E54E" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR080" H 15350 7600 50  0001 C CNN
+F 1 "GND" H 15355 7677 50  0000 C CNN
+F 2 "" H 15350 7850 50  0001 C CNN
+F 3 "" H 15350 7850 50  0001 C CNN
+	1    15350 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15350 7850 15350 7800
+Wire Wire Line
+	15350 7800 15150 7800
+Wire Wire Line
+	15150 7800 15150 8100
+Wire Wire Line
+	15150 8100 14550 8100
+Wire Wire Line
+	14550 8400 15550 8400
+Wire Wire Line
+	15650 8050 15650 8400
+Wire Wire Line
+	15550 8400 15550 8450
+Wire Wire Line
+	15550 8750 15550 8850
+$Comp
+L power:GND #PWR081
+U 1 1 5EBC61E1
+P 15550 8850
+AR Path="/5E5AB76A/5EBC61E1" Ref="#PWR081"  Part="1" 
+AR Path="/5F1B5C00/5EBC61E1" Ref="#PWR0119"  Part="1" 
+AR Path="/5F1B6B3A/5EBC61E1" Ref="#PWR0195"  Part="1" 
+AR Path="/5F1B6B42/5EBC61E1" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR081" H 15550 8600 50  0001 C CNN
+F 1 "GND" H 15555 8677 50  0000 C CNN
+F 2 "" H 15550 8850 50  0001 C CNN
+F 3 "" H 15550 8850 50  0001 C CNN
+	1    15550 8850
+	-1   0    0    -1  
+$EndComp
+Connection ~ 15550 8400
+Wire Wire Line
+	15550 8400 15650 8400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EC5514A
+P 13100 6850
+AR Path="/5EC5514A" Ref="#PWR?"  Part="1" 
+AR Path="/5E5AB76A/5EC5514A" Ref="#PWR075"  Part="1" 
+AR Path="/5F1B5C00/5EC5514A" Ref="#PWR0113"  Part="1" 
+AR Path="/5F1B6B3A/5EC5514A" Ref="#PWR0189"  Part="1" 
+AR Path="/5F1B6B42/5EC5514A" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR075" H 13100 6700 50  0001 C CNN
+F 1 "+3V3" H 13115 7023 50  0000 C CNN
+F 2 "" H 13100 6850 50  0001 C CNN
+F 3 "" H 13100 6850 50  0001 C CNN
+	1    13100 6850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 6850 13100 6950
+Wire Wire Line
+	13100 7400 13250 7400
+Wire Wire Line
+	12950 7050 12950 6950
+Wire Wire Line
+	12950 6950 13100 6950
+Connection ~ 13100 6950
+Wire Wire Line
+	13100 6950 13100 7400
+Wire Wire Line
+	12950 7350 12950 7500
+Wire Wire Line
+	12950 7500 13250 7500
+$Comp
+L power:GND #PWR073
+U 1 1 5EC9D83E
+P 12550 7450
+AR Path="/5E5AB76A/5EC9D83E" Ref="#PWR073"  Part="1" 
+AR Path="/5F1B5C00/5EC9D83E" Ref="#PWR0111"  Part="1" 
+AR Path="/5F1B6B3A/5EC9D83E" Ref="#PWR0187"  Part="1" 
+AR Path="/5F1B6B42/5EC9D83E" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR073" H 12550 7200 50  0001 C CNN
+F 1 "GND" H 12555 7277 50  0000 C CNN
+F 2 "" H 12550 7450 50  0001 C CNN
+F 3 "" H 12550 7450 50  0001 C CNN
+	1    12550 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 7350 12550 7450
+Wire Wire Line
+	12550 6950 12950 6950
+Wire Wire Line
+	12550 6950 12550 7050
+Connection ~ 12950 6950
+$Comp
+L jcg_custom_parts:HMC544AETR U16
+U 1 1 5ECE026C
+P 8450 3100
+AR Path="/5E5AB76A/5ECE026C" Ref="U16"  Part="1" 
+AR Path="/5F1B5C00/5ECE026C" Ref="U24"  Part="1" 
+AR Path="/5F1B6B3A/5ECE026C" Ref="U40"  Part="1" 
+AR Path="/5F1B6B42/5ECE026C" Ref="U32"  Part="1" 
+F 0 "U16" H 8450 3665 50  0000 C CNN
+F 1 "HMC544AETR" H 8450 3574 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 8500 2700 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf" H 8450 3050 50  0001 C CNN
+F 4 "1127-1856-1-ND" H 8450 3575 50  0001 C CNN "Digi-Key PN"
+F 5 "IC RF SWITCH SPDT 4GHZ SOT26" H 8450 3483 50  0000 C CNN "Description"
+	1    8450 3100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  6550 11750 6550
+Wire Wire Line
+	5650 2250 5550 2250
+Wire Wire Line
+	5550 2250 5550 1350
+Wire Wire Line
+	5550 1350 6650 1350
+Connection ~ 5300 1800
+Wire Wire Line
+	5100 1800 5100 1850
+Wire Wire Line
+	5300 1800 5100 1800
+Wire Wire Line
+	5300 1700 5300 1800
+Wire Wire Line
+	5100 2150 5100 2250
+$Comp
+L power:GND #PWR056
+U 1 1 5E72FAE9
+P 5100 2250
+AR Path="/5E5AB76A/5E72FAE9" Ref="#PWR056"  Part="1" 
+AR Path="/5F1B5C00/5E72FAE9" Ref="#PWR094"  Part="1" 
+AR Path="/5F1B6B3A/5E72FAE9" Ref="#PWR0170"  Part="1" 
+AR Path="/5F1B6B42/5E72FAE9" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR056" H 5100 2000 50  0001 C CNN
+F 1 "GND" H 5105 2077 50  0000 C CNN
+F 2 "" H 5100 2250 50  0001 C CNN
+F 3 "" H 5100 2250 50  0001 C CNN
+	1    5100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E72FADF
+P 5100 2000
+AR Path="/5E72FADF" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E72FADF" Ref="C44"  Part="1" 
+AR Path="/5F1B5C00/5E72FADF" Ref="C70"  Part="1" 
+AR Path="/5F1B6B3A/5E72FADF" Ref="C122"  Part="1" 
+AR Path="/5F1B6B42/5E72FADF" Ref="C96"  Part="1" 
+F 0 "C44" H 4800 2050 50  0000 C CNN
+F 1 "0.1µF" H 4850 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 4940 2000 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf" H 5100 2000 50  0001 C CNN
+F 4 "490-13342-1-ND" H 5100 2000 50  0001 C CNN "Digi-Key PN"
+F 5 "0.1µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 5100 2000 50  0001 C CNN "Description"
+	1    5100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E72FAD5
+P 5300 1700
+AR Path="/5E72FAD5" Ref="#PWR?"  Part="1" 
+AR Path="/5E5AB76A/5E72FAD5" Ref="#PWR057"  Part="1" 
+AR Path="/5F1B5C00/5E72FAD5" Ref="#PWR095"  Part="1" 
+AR Path="/5F1B6B3A/5E72FAD5" Ref="#PWR0171"  Part="1" 
+AR Path="/5F1B6B42/5E72FAD5" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR057" H 5300 1550 50  0001 C CNN
+F 1 "+3V3" H 5315 1873 50  0000 C CNN
+F 2 "" H 5300 1700 50  0001 C CNN
+F 3 "" H 5300 1700 50  0001 C CNN
+	1    5300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2350 5650 2350
+Wire Wire Line
+	5300 1800 5300 2350
+Wire Wire Line
+	9200 3000 9200 2950
+Wire Wire Line
+	9200 2950 8900 2950
+Wire Wire Line
+	8900 3050 9000 3050
+Wire Wire Line
+	9000 3050 9000 3300
+Wire Wire Line
+	9000 3300 9450 3300
+Wire Wire Line
+	10800 3050 10900 3050
+Wire Wire Line
+	7500 9300 7500 9250
+Connection ~ 7500 9250
+Wire Wire Line
+	7500 9250 7800 9250
+Wire Wire Line
+	10100 3400 10100 3450
+Wire Wire Line
+	10100 3450 10350 3450
+Wire Wire Line
+	10650 3450 10650 3400
+Wire Wire Line
+	10350 3500 10350 3450
+Connection ~ 10350 3450
+Wire Wire Line
+	10350 3450 10650 3450
+$Comp
+L power:GND #PWR066
+U 1 1 5EE640CF
+P 9200 3000
+AR Path="/5E5AB76A/5EE640CF" Ref="#PWR066"  Part="1" 
+AR Path="/5F1B5C00/5EE640CF" Ref="#PWR0104"  Part="1" 
+AR Path="/5F1B6B3A/5EE640CF" Ref="#PWR0180"  Part="1" 
+AR Path="/5F1B6B42/5EE640CF" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR066" H 9200 2750 50  0001 C CNN
+F 1 "GND" H 9205 2827 50  0000 C CNN
+F 2 "" H 9200 3000 50  0001 C CNN
+F 3 "" H 9200 3000 50  0001 C CNN
+	1    9200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR071
+U 1 1 5EE64537
+P 11350 3500
+AR Path="/5E5AB76A/5EE64537" Ref="#PWR071"  Part="1" 
+AR Path="/5F1B5C00/5EE64537" Ref="#PWR0109"  Part="1" 
+AR Path="/5F1B6B3A/5EE64537" Ref="#PWR0185"  Part="1" 
+AR Path="/5F1B6B42/5EE64537" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR071" H 11350 3250 50  0001 C CNN
+F 1 "GND" H 11355 3327 50  0000 C CNN
+F 2 "" H 11350 3500 50  0001 C CNN
+F 3 "" H 11350 3500 50  0001 C CNN
+	1    11350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 3400 11050 3450
+Wire Wire Line
+	11050 3450 11350 3450
+Wire Wire Line
+	11600 3450 11600 3400
+Wire Wire Line
+	11350 3500 11350 3450
+Connection ~ 11350 3450
+Wire Wire Line
+	11350 3450 11600 3450
+Wire Wire Line
+	8900 2850 9300 2850
+Wire Wire Line
+	9300 2850 9300 2500
+Wire Wire Line
+	9300 2500 9450 2500
+$Comp
+L power:GND #PWR070
+U 1 1 5EE985EE
+P 10850 2450
+AR Path="/5E5AB76A/5EE985EE" Ref="#PWR070"  Part="1" 
+AR Path="/5F1B5C00/5EE985EE" Ref="#PWR0108"  Part="1" 
+AR Path="/5F1B6B3A/5EE985EE" Ref="#PWR0184"  Part="1" 
+AR Path="/5F1B6B42/5EE985EE" Ref="#PWR0146"  Part="1" 
+F 0 "#PWR070" H 10850 2200 50  0001 C CNN
+F 1 "GND" H 10855 2277 50  0000 C CNN
+F 2 "" H 10850 2450 50  0001 C CNN
+F 3 "" H 10850 2450 50  0001 C CNN
+	1    10850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2350 10600 2400
+Wire Wire Line
+	10600 2400 10850 2400
+Wire Wire Line
+	11150 2400 11150 2350
+Wire Wire Line
+	10850 2450 10850 2400
+Connection ~ 10850 2400
+Wire Wire Line
+	10850 2400 11150 2400
+Text Notes 9950 4100 0    50   Italic 0
+2nd Nyquist Zone Filter\nComposite Bandpass Filter: 2.3 - 3.6 GHz\n    LPF Passband (-1dB): 0 - 3.6 GHz\n    HPF Passband (-1dB): > 2.3 GHz
+Text Notes 10150 1650 0    50   Italic 0
+1st Nyquist Zone Filter\n    LPF Passband (-1dB): 0 - 2.14 GHz
+$Comp
+L jcg_custom_parts:HMC544AETR U17
+U 1 1 5EECE7DE
+P 13100 2800
+AR Path="/5E5AB76A/5EECE7DE" Ref="U17"  Part="1" 
+AR Path="/5F1B5C00/5EECE7DE" Ref="U25"  Part="1" 
+AR Path="/5F1B6B3A/5EECE7DE" Ref="U41"  Part="1" 
+AR Path="/5F1B6B42/5EECE7DE" Ref="U33"  Part="1" 
+F 0 "U17" H 13100 3365 50  0000 C CNN
+F 1 "HMC544AETR" H 13100 3274 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 13150 2400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc544ae.pdf" H 13100 2750 50  0001 C CNN
+F 4 "1127-1856-1-ND" H 13100 3275 50  0001 C CNN "Digi-Key PN"
+F 5 "IC RF SWITCH SPDT 4GHZ SOT26" H 13100 3183 50  0000 C CNN "Description"
+	1    13100 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR072
+U 1 1 5EED4325
+P 12400 2750
+AR Path="/5E5AB76A/5EED4325" Ref="#PWR072"  Part="1" 
+AR Path="/5F1B5C00/5EED4325" Ref="#PWR0110"  Part="1" 
+AR Path="/5F1B6B3A/5EED4325" Ref="#PWR0186"  Part="1" 
+AR Path="/5F1B6B42/5EED4325" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR072" H 12400 2500 50  0001 C CNN
+F 1 "GND" H 12405 2577 50  0000 C CNN
+F 2 "" H 12400 2750 50  0001 C CNN
+F 3 "" H 12400 2750 50  0001 C CNN
+	1    12400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 2300 11550 2000
+Wire Wire Line
+	11550 2000 11300 2000
+Wire Wire Line
+	12200 2300 12350 2300
+Wire Wire Line
+	12350 2300 12350 2550
+Wire Wire Line
+	12350 2550 12650 2550
+Wire Wire Line
+	12650 2650 12400 2650
+Wire Wire Line
+	12400 2650 12400 2750
+Wire Wire Line
+	12650 2750 12550 2750
+Wire Wire Line
+	12550 2750 12550 3050
+Wire Wire Line
+	12550 3050 12200 3050
+Wire Wire Line
+	11900 3050 11750 3050
+Wire Wire Line
+	8000 2950 7700 2950
+Wire Wire Line
+	9750 2500 10050 2500
+Wire Wire Line
+	10050 2500 10050 2000
+Wire Wire Line
+	10050 2000 10450 2000
+Wire Wire Line
+	9950 3050 9850 3050
+Wire Wire Line
+	9850 3050 9850 3300
+Wire Wire Line
+	9850 3300 9750 3300
+$Comp
+L power:GND #PWR074
+U 1 1 5EFA4692
+P 13000 4250
+AR Path="/5E5AB76A/5EFA4692" Ref="#PWR074"  Part="1" 
+AR Path="/5F1B5C00/5EFA4692" Ref="#PWR0112"  Part="1" 
+AR Path="/5F1B6B3A/5EFA4692" Ref="#PWR0188"  Part="1" 
+AR Path="/5F1B6B42/5EFA4692" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR074" H 13000 4000 50  0001 C CNN
+F 1 "GND" H 13005 4077 50  0000 C CNN
+F 2 "" H 13000 4250 50  0001 C CNN
+F 3 "" H 13000 4250 50  0001 C CNN
+	1    13000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR077
+U 1 1 5EFA469C
+P 13700 4250
+AR Path="/5E5AB76A/5EFA469C" Ref="#PWR077"  Part="1" 
+AR Path="/5F1B5C00/5EFA469C" Ref="#PWR0115"  Part="1" 
+AR Path="/5F1B6B3A/5EFA469C" Ref="#PWR0191"  Part="1" 
+AR Path="/5F1B6B42/5EFA469C" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR077" H 13700 4000 50  0001 C CNN
+F 1 "GND" H 13705 4077 50  0000 C CNN
+F 2 "" H 13700 4250 50  0001 C CNN
+F 3 "" H 13700 4250 50  0001 C CNN
+	1    13700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 4150 13700 4150
+Wire Wire Line
+	13700 4150 13700 4250
+Wire Wire Line
+	13100 4050 13000 4050
+Wire Wire Line
+	13000 4050 13000 4150
+Wire Wire Line
+	13100 4150 13000 4150
+Connection ~ 13000 4150
+Wire Wire Line
+	13000 4150 13000 4250
+$Comp
+L dk_Coaxial-Connectors-RF:5-1814832-1 J?
+U 1 1 5EFA46B6
+P 15200 3950
+AR Path="/5EFA46B6" Ref="J?"  Part="1" 
+AR Path="/5E5AB76A/5EFA46B6" Ref="J6"  Part="1" 
+AR Path="/5F1B5C00/5EFA46B6" Ref="J11"  Part="1" 
+AR Path="/5F1B6B3A/5EFA46B6" Ref="J21"  Part="1" 
+AR Path="/5F1B6B42/5EFA46B6" Ref="J16"  Part="1" 
+F 0 "J6" H 15278 4197 60  0000 C CNN
+F 1 "5-1814832-1" H 15278 4091 60  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 15400 4150 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 15400 4250 60  0001 L CNN
+F 4 "A97594-ND" H 15400 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "5-1814832-1" H 15400 4450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 15400 4550 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 15400 4650 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 15400 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 15400 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50 OHM PCB" H 15400 4950 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 15400 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15400 5150 60  0001 L CNN "Status"
+	1    15200 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:5-1814832-1 J?
+U 1 1 5EFA46C9
+P 15200 4850
+AR Path="/5EFA46C9" Ref="J?"  Part="1" 
+AR Path="/5E5AB76A/5EFA46C9" Ref="J7"  Part="1" 
+AR Path="/5F1B5C00/5EFA46C9" Ref="J12"  Part="1" 
+AR Path="/5F1B6B3A/5EFA46C9" Ref="J22"  Part="1" 
+AR Path="/5F1B6B42/5EFA46C9" Ref="J17"  Part="1" 
+F 0 "J7" H 15278 5097 60  0000 C CNN
+F 1 "5-1814832-1" H 15278 4991 60  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_Vertical_5-1814832-1" H 15400 5050 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 15400 5150 60  0001 L CNN
+F 4 "A97594-ND" H 15400 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "5-1814832-1" H 15400 5350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 15400 5450 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 15400 5550 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 15400 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 15400 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50 OHM PCB" H 15400 5850 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 15400 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15400 6050 60  0001 L CNN "Status"
+	1    15200 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 5EFA46D3
+P 15200 4200
+AR Path="/5E5AB76A/5EFA46D3" Ref="#PWR078"  Part="1" 
+AR Path="/5F1B5C00/5EFA46D3" Ref="#PWR0116"  Part="1" 
+AR Path="/5F1B6B3A/5EFA46D3" Ref="#PWR0192"  Part="1" 
+AR Path="/5F1B6B42/5EFA46D3" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR078" H 15200 3950 50  0001 C CNN
+F 1 "GND" H 15205 4027 50  0000 C CNN
+F 2 "" H 15200 4200 50  0001 C CNN
+F 3 "" H 15200 4200 50  0001 C CNN
+	1    15200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR079
+U 1 1 5EFA46DD
+P 15200 5100
+AR Path="/5E5AB76A/5EFA46DD" Ref="#PWR079"  Part="1" 
+AR Path="/5F1B5C00/5EFA46DD" Ref="#PWR0117"  Part="1" 
+AR Path="/5F1B6B3A/5EFA46DD" Ref="#PWR0193"  Part="1" 
+AR Path="/5F1B6B42/5EFA46DD" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR079" H 15200 4850 50  0001 C CNN
+F 1 "GND" H 15205 4927 50  0000 C CNN
+F 2 "" H 15200 5100 50  0001 C CNN
+F 3 "" H 15200 5100 50  0001 C CNN
+	1    15200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 3950 13600 3950
+Wire Wire Line
+	14650 3950 15000 3950
+Wire Wire Line
+	15200 4200 15200 4150
+Wire Wire Line
+	15200 5050 15200 5100
+Wire Wire Line
+	15000 4850 14650 4850
+Wire Wire Line
+	14350 4850 14050 4850
+Wire Wire Line
+	14050 4850 14050 4050
+Wire Wire Line
+	14050 4050 13600 4050
+Text Notes 15400 4500 0    50   ~ 10
+RX Differential Output
+Text Label 12600 4050 2    50   Italic 0
+RX_FILTER_OUT
+Wire Wire Line
+	12800 3950 13100 3950
+Text Label 14600 2650 0    50   Italic 0
+RX_FILTER_OUT
+Wire Wire Line
+	13550 2650 14000 2650
+Wire Wire Line
+	14600 2650 14300 2650
+Wire Notes Line
+	11750 6000 16500 6000
+Wire Notes Line
+	11750 6000 11750 10500
+Text Notes 8250 4050 0    118  ~ 24
+RX Path
+Text Notes 3300 4700 0    118  ~ 24
+RX/TX SMA
+Text HLabel 2150 5000 0    50   Input Italic 0
+~RX~_TX_SW_INV
+Wire Wire Line
+	2150 5850 2300 5850
+Wire Wire Line
+	2300 5850 2300 5600
+Wire Wire Line
+	2300 5600 2550 5600
+Wire Wire Line
+	2550 5400 2300 5400
+Wire Wire Line
+	2300 5400 2300 5000
+Wire Wire Line
+	2300 5000 2150 5000
+Wire Notes Line
+	4800 6550 4800 4400
+Wire Notes Line
+	4800 4400 500  4400
+Text Notes 13450 6350 0    118  ~ 24
+I2C GPIO Expander
+Text HLabel 7700 3250 0    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW
+Text Notes 8100 3450 0    50   Italic 0
+RFC-RF1: A=0,B=1\nRFC-RF2: A=1,B=0\nP1dB  = 39 dBm\nt_switch  = 30 ns
+Text Notes 12750 2100 0    50   Italic 0
+RFC-RF1: A=0,B=1\nRFC-RF2: A=1,B=0\nP1dB  = 39 dBm\nt_switch  = 30 ns
+$Comp
+L power:GND #PWR062
+U 1 1 5F116E3F
+P 7250 2600
+AR Path="/5E5AB76A/5F116E3F" Ref="#PWR062"  Part="1" 
+AR Path="/5F1B5C00/5F116E3F" Ref="#PWR0100"  Part="1" 
+AR Path="/5F1B6B3A/5F116E3F" Ref="#PWR0176"  Part="1" 
+AR Path="/5F1B6B42/5F116E3F" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR062" H 7250 2350 50  0001 C CNN
+F 1 "GND" H 7255 2427 50  0000 C CNN
+F 2 "" H 7250 2600 50  0001 C CNN
+F 3 "" H 7250 2600 50  0001 C CNN
+	1    7250 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 3550 0    50   Italic 0
+7-bit (0.25dB) DSA\nAttn: 0 - 31.75 dB\nBW: 9 kHz - 6 GHz
+Text Notes 2500 9000 0    50   Italic 0
+7-bit (0.25dB) DSA\nAttn: 0 - 31.75 dB\nBW: 9 kHz - 6 GHz
+Text HLabel 8000 2300 2    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW_INV
+Wire Wire Line
+	8000 2850 7750 2850
+Wire Wire Line
+	7750 2850 7750 2300
+Wire Wire Line
+	7750 2300 8000 2300
+Wire Wire Line
+	8000 3050 7850 3050
+Wire Wire Line
+	7850 3050 7850 3250
+Wire Wire Line
+	7850 3250 7700 3250
+Text HLabel 14000 2950 2    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW
+Text HLabel 14000 2200 2    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW_INV
+Wire Wire Line
+	14000 2200 13850 2200
+Wire Wire Line
+	13850 2200 13850 2550
+Wire Wire Line
+	13850 2550 13550 2550
+Wire Wire Line
+	13550 2750 13850 2750
+Wire Wire Line
+	13850 2750 13850 2950
+Wire Wire Line
+	13850 2950 14000 2950
+Wire Wire Line
+	12600 4050 12800 4050
+Wire Wire Line
+	12800 4050 12800 3950
+Text HLabel 3300 950  0    50   Input Italic 0
++5V_REG
+Wire Wire Line
+	3400 950  3300 950 
+Wire Wire Line
+	3400 950  3400 1150
+Text HLabel 4550 7300 2    50   Input Italic 0
++5V_REG
+Wire Wire Line
+	4550 7300 4450 7300
+Wire Wire Line
+	4450 7300 4450 7650
+$Comp
+L ADL5611ARKZ-R7:ADL5611ARKZ-R7 U11
+U 1 1 5E6BAE5E
+P 2400 2200
+AR Path="/5E5AB76A/5E6BAE5E" Ref="U11"  Part="1" 
+AR Path="/5F1B5C00/5E6BAE5E" Ref="U19"  Part="1" 
+AR Path="/5F1B6B3A/5E6BAE5E" Ref="U35"  Part="1" 
+AR Path="/5F1B6B42/5E6BAE5E" Ref="U27"  Part="1" 
+F 0 "U11" H 2450 2927 60  0000 C CNN
+F 1 "ADL5611ARKZ-R7" H 2450 2821 60  0000 C CNN
+F 2 "footprints:ADL5611ARKZ-R7" H 2450 3150 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5611.pdf" H 1650 2450 60  0001 C CNN
+F 4 "ADL5611ARKZ-R7CT-ND" H 2450 3050 50  0001 C CNN "Digi-Key PN"
+F 5 "IC AMP W-CDMA 30MHZ-6GHZ SOT89-3" H 2450 2723 50  0000 C CNN "Description"
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6BF56D
+P 4050 1950
+AR Path="/5E6BF56D" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6BF56D" Ref="C40"  Part="1" 
+AR Path="/5F1B5C00/5E6BF56D" Ref="C66"  Part="1" 
+AR Path="/5F1B6B3A/5E6BF56D" Ref="C118"  Part="1" 
+AR Path="/5F1B6B42/5E6BF56D" Ref="C92"  Part="1" 
+F 0 "C40" V 3798 1950 50  0000 C CNN
+F 1 "330pF" V 3889 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 3890 1950 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 4050 1950 50  0001 C CNN
+F 4 "399-7787-1-ND" V 4050 1950 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 4050 1950 50  0001 C CNN "Description"
+	1    4050 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6BFB9C
+P 7550 2950
+AR Path="/5E6BFB9C" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6BFB9C" Ref="C48"  Part="1" 
+AR Path="/5F1B5C00/5E6BFB9C" Ref="C74"  Part="1" 
+AR Path="/5F1B6B3A/5E6BFB9C" Ref="C126"  Part="1" 
+AR Path="/5F1B6B42/5E6BFB9C" Ref="C100"  Part="1" 
+F 0 "C48" V 7298 2950 50  0000 C CNN
+F 1 "330pF" V 7389 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 7390 2950 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 7550 2950 50  0001 C CNN
+F 4 "399-7787-1-ND" V 7550 2950 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 7550 2950 50  0001 C CNN "Description"
+	1    7550 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C05C4
+P 9600 2500
+AR Path="/5E6C05C4" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C05C4" Ref="C49"  Part="1" 
+AR Path="/5F1B5C00/5E6C05C4" Ref="C75"  Part="1" 
+AR Path="/5F1B6B3A/5E6C05C4" Ref="C127"  Part="1" 
+AR Path="/5F1B6B42/5E6C05C4" Ref="C101"  Part="1" 
+F 0 "C49" V 9348 2500 50  0000 C CNN
+F 1 "330pF" V 9439 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 9440 2500 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 9600 2500 50  0001 C CNN
+F 4 "399-7787-1-ND" V 9600 2500 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 9600 2500 50  0001 C CNN "Description"
+	1    9600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C0C3E
+P 9600 3300
+AR Path="/5E6C0C3E" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C0C3E" Ref="C50"  Part="1" 
+AR Path="/5F1B5C00/5E6C0C3E" Ref="C76"  Part="1" 
+AR Path="/5F1B6B3A/5E6C0C3E" Ref="C128"  Part="1" 
+AR Path="/5F1B6B42/5E6C0C3E" Ref="C102"  Part="1" 
+F 0 "C50" V 9348 3300 50  0000 C CNN
+F 1 "330pF" V 9439 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 9440 3300 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 9600 3300 50  0001 C CNN
+F 4 "399-7787-1-ND" V 9600 3300 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 9600 3300 50  0001 C CNN "Description"
+	1    9600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11900 2300 11550 2300
+$Comp
+L Device:C C?
+U 1 1 5E6C1B1A
+P 12050 2300
+AR Path="/5E6C1B1A" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C1B1A" Ref="C53"  Part="1" 
+AR Path="/5F1B5C00/5E6C1B1A" Ref="C79"  Part="1" 
+AR Path="/5F1B6B3A/5E6C1B1A" Ref="C131"  Part="1" 
+AR Path="/5F1B6B42/5E6C1B1A" Ref="C105"  Part="1" 
+F 0 "C53" V 11798 2300 50  0000 C CNN
+F 1 "330pF" V 11889 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 11890 2300 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 12050 2300 50  0001 C CNN
+F 4 "399-7787-1-ND" V 12050 2300 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 12050 2300 50  0001 C CNN "Description"
+	1    12050 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C209A
+P 12050 3050
+AR Path="/5E6C209A" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C209A" Ref="C54"  Part="1" 
+AR Path="/5F1B5C00/5E6C209A" Ref="C80"  Part="1" 
+AR Path="/5F1B6B3A/5E6C209A" Ref="C132"  Part="1" 
+AR Path="/5F1B6B42/5E6C209A" Ref="C106"  Part="1" 
+F 0 "C54" V 11798 3050 50  0000 C CNN
+F 1 "330pF" V 11889 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 11890 3050 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 12050 3050 50  0001 C CNN
+F 4 "399-7787-1-ND" V 12050 3050 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 12050 3050 50  0001 C CNN "Description"
+	1    12050 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C26C9
+P 14150 2650
+AR Path="/5E6C26C9" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C26C9" Ref="C56"  Part="1" 
+AR Path="/5F1B5C00/5E6C26C9" Ref="C82"  Part="1" 
+AR Path="/5F1B6B3A/5E6C26C9" Ref="C134"  Part="1" 
+AR Path="/5F1B6B42/5E6C26C9" Ref="C108"  Part="1" 
+F 0 "C56" V 13898 2650 50  0000 C CNN
+F 1 "330pF" V 13989 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 13990 2650 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 14150 2650 50  0001 C CNN
+F 4 "399-7787-1-ND" V 14150 2650 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 14150 2650 50  0001 C CNN "Description"
+	1    14150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C3039
+P 14500 4850
+AR Path="/5E6C3039" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C3039" Ref="C58"  Part="1" 
+AR Path="/5F1B5C00/5E6C3039" Ref="C84"  Part="1" 
+AR Path="/5F1B6B3A/5E6C3039" Ref="C136"  Part="1" 
+AR Path="/5F1B6B42/5E6C3039" Ref="C110"  Part="1" 
+F 0 "C58" V 14248 4850 50  0000 C CNN
+F 1 "330pF" V 14339 4850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 14340 4850 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 14500 4850 50  0001 C CNN
+F 4 "399-7787-1-ND" V 14500 4850 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 14500 4850 50  0001 C CNN "Description"
+	1    14500 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L ADL5611ARKZ-R7:ADL5611ARKZ-R7 U14
+U 1 1 5E6C5AA0
+P 5750 9100
+AR Path="/5E5AB76A/5E6C5AA0" Ref="U14"  Part="1" 
+AR Path="/5F1B5C00/5E6C5AA0" Ref="U22"  Part="1" 
+AR Path="/5F1B6B3A/5E6C5AA0" Ref="U38"  Part="1" 
+AR Path="/5F1B6B42/5E6C5AA0" Ref="U30"  Part="1" 
+F 0 "U14" H 5800 9827 60  0000 C CNN
+F 1 "ADL5611ARKZ-R7" H 5800 9721 60  0000 C CNN
+F 2 "footprints:ADL5611ARKZ-R7" H 5800 10050 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5611.pdf" H 5000 9350 60  0001 C CNN
+F 4 "ADL5611ARKZ-R7CT-ND" H 5800 9950 50  0001 C CNN "Digi-Key PN"
+F 5 "IC AMP W-CDMA 30MHZ-6GHZ SOT89-3" H 5800 9623 50  0000 C CNN "Description"
+	1    5750 9100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C8E22
+P 1850 5500
+AR Path="/5E6C8E22" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C8E22" Ref="C36"  Part="1" 
+AR Path="/5F1B5C00/5E6C8E22" Ref="C62"  Part="1" 
+AR Path="/5F1B6B3A/5E6C8E22" Ref="C114"  Part="1" 
+AR Path="/5F1B6B42/5E6C8E22" Ref="C88"  Part="1" 
+F 0 "C36" V 1598 5500 50  0000 C CNN
+F 1 "330pF" V 1689 5500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 1690 5500 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 1850 5500 50  0001 C CNN
+F 4 "399-7787-1-ND" V 1850 5500 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 1850 5500 50  0001 C CNN "Description"
+	1    1850 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C95A8
+P 1600 8450
+AR Path="/5E6C95A8" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C95A8" Ref="C35"  Part="1" 
+AR Path="/5F1B5C00/5E6C95A8" Ref="C61"  Part="1" 
+AR Path="/5F1B6B3A/5E6C95A8" Ref="C113"  Part="1" 
+AR Path="/5F1B6B42/5E6C95A8" Ref="C87"  Part="1" 
+F 0 "C35" V 1348 8450 50  0000 C CNN
+F 1 "330pF" V 1439 8450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 1440 8450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 1600 8450 50  0001 C CNN
+F 4 "399-7787-1-ND" V 1600 8450 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 1600 8450 50  0001 C CNN "Description"
+	1    1600 8450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C9D80
+P 4150 8450
+AR Path="/5E6C9D80" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C9D80" Ref="C41"  Part="1" 
+AR Path="/5F1B5C00/5E6C9D80" Ref="C67"  Part="1" 
+AR Path="/5F1B6B3A/5E6C9D80" Ref="C119"  Part="1" 
+AR Path="/5F1B6B42/5E6C9D80" Ref="C93"  Part="1" 
+F 0 "C41" V 3898 8450 50  0000 C CNN
+F 1 "330pF" V 3989 8450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 3990 8450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 4150 8450 50  0001 C CNN
+F 4 "399-7787-1-ND" V 4150 8450 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 4150 8450 50  0001 C CNN "Description"
+	1    4150 8450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6CA5A3
+P 6800 8850
+AR Path="/5E6CA5A3" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6CA5A3" Ref="C47"  Part="1" 
+AR Path="/5F1B5C00/5E6CA5A3" Ref="C73"  Part="1" 
+AR Path="/5F1B6B3A/5E6CA5A3" Ref="C125"  Part="1" 
+AR Path="/5F1B6B42/5E6CA5A3" Ref="C99"  Part="1" 
+F 0 "C47" V 6548 8850 50  0000 C CNN
+F 1 "330pF" V 6639 8850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 6640 8850 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 6800 8850 50  0001 C CNN
+F 4 "399-7787-1-ND" V 6800 8850 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 6800 8850 50  0001 C CNN "Description"
+	1    6800 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6CAAF1
+P 9900 8850
+AR Path="/5E6CAAF1" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6CAAF1" Ref="C51"  Part="1" 
+AR Path="/5F1B5C00/5E6CAAF1" Ref="C77"  Part="1" 
+AR Path="/5F1B6B3A/5E6CAAF1" Ref="C129"  Part="1" 
+AR Path="/5F1B6B42/5E6CAAF1" Ref="C103"  Part="1" 
+F 0 "C51" V 9648 8850 50  0000 C CNN
+F 1 "330pF" V 9739 8850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 9740 8850 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 9900 8850 50  0001 C CNN
+F 4 "399-7787-1-ND" V 9900 8850 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 9900 8850 50  0001 C CNN "Description"
+	1    9900 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6CB27F
+P 9900 9750
+AR Path="/5E6CB27F" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6CB27F" Ref="C52"  Part="1" 
+AR Path="/5F1B5C00/5E6CB27F" Ref="C78"  Part="1" 
+AR Path="/5F1B6B3A/5E6CB27F" Ref="C130"  Part="1" 
+AR Path="/5F1B6B42/5E6CB27F" Ref="C104"  Part="1" 
+F 0 "C52" V 9648 9750 50  0000 C CNN
+F 1 "330pF" V 9739 9750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 9740 9750 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 9900 9750 50  0001 C CNN
+F 4 "399-7787-1-ND" V 9900 9750 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 9900 9750 50  0001 C CNN "Description"
+	1    9900 9750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 5E6D0BFD
+P 4450 8200
+AR Path="/5E5AB76A/5E6D0BFD" Ref="L4"  Part="1" 
+AR Path="/5F1B5C00/5E6D0BFD" Ref="L6"  Part="1" 
+AR Path="/5F1B6B3A/5E6D0BFD" Ref="L10"  Part="1" 
+AR Path="/5F1B6B42/5E6D0BFD" Ref="L8"  Part="1" 
+F 0 "L4" H 4503 8246 50  0000 L CNN
+F 1 "43nH" H 4503 8155 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 8200 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-0024.pdf" H 4450 8200 50  0001 C CNN
+F 4 "490-6892-1-ND" H 4450 8200 50  0001 C CNN "Digi-Key PN"
+F 5 "FIXED IND 43NH 380MA 290 MOHM" H 4450 8200 50  0001 C CNN "Description"
+	1    4450 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C43
+U 1 1 5E6D2F5F
+P 4650 7850
+AR Path="/5E5AB76A/5E6D2F5F" Ref="C43"  Part="1" 
+AR Path="/5F1B5C00/5E6D2F5F" Ref="C69"  Part="1" 
+AR Path="/5F1B6B3A/5E6D2F5F" Ref="C121"  Part="1" 
+AR Path="/5F1B6B42/5E6D2F5F" Ref="C95"  Part="1" 
+F 0 "C43" H 4765 7896 50  0000 L CNN
+F 1 "68pF" H 4765 7805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4688 7700 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C680K5RAC7867.pdf" H 4650 7850 50  0001 C CNN
+F 4 "399-19382-1-ND" H 4650 7850 50  0001 C CNN "Digi-Key PN"
+F 5 "68pF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 4650 7850 50  0001 C CNN "Description"
+	1    4650 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5E6D49F5
+P 5100 7850
+AR Path="/5E5AB76A/5E6D49F5" Ref="C45"  Part="1" 
+AR Path="/5F1B5C00/5E6D49F5" Ref="C71"  Part="1" 
+AR Path="/5F1B6B3A/5E6D49F5" Ref="C123"  Part="1" 
+AR Path="/5F1B6B42/5E6D49F5" Ref="C97"  Part="1" 
+F 0 "C45" H 5215 7896 50  0000 L CNN
+F 1 "1.2nF" H 5215 7805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5138 7700 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C122K5RACTU.pdf" H 5100 7850 50  0001 C CNN
+F 4 "399-7851-1-ND" H 5100 7850 50  0001 C CNN "Digi-Key PN"
+F 5 "1200pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" H 5100 7850 50  0001 C CNN "Description"
+	1    5100 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5E6D8746
+P 5550 7850
+AR Path="/5E5AB76A/5E6D8746" Ref="C46"  Part="1" 
+AR Path="/5F1B5C00/5E6D8746" Ref="C72"  Part="1" 
+AR Path="/5F1B6B3A/5E6D8746" Ref="C124"  Part="1" 
+AR Path="/5F1B6B42/5E6D8746" Ref="C98"  Part="1" 
+F 0 "C46" H 5665 7896 50  0000 L CNN
+F 1 "1µF" H 5665 7805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5665 7759 50  0001 L CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KA8NFNC.jsp" H 5550 7850 50  0001 C CNN
+F 4 "1276-1942-1-ND" H 5550 7850 50  0001 C CNN "Digi-Key PN"
+F 5 "1µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)" H 5550 7850 50  0001 C CNN "Description"
+	1    5550 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:PE43711 U15
+U 1 1 5E6DC28B
+P 6300 2500
+AR Path="/5E5AB76A/5E6DC28B" Ref="U15"  Part="1" 
+AR Path="/5F1B6B3A/5E6DC28B" Ref="U39"  Part="1" 
+AR Path="/5F1B5C00/5E6DC28B" Ref="U23"  Part="1" 
+AR Path="/5F1B6B42/5E6DC28B" Ref="U31"  Part="1" 
+F 0 "U15" H 5750 2900 50  0000 L CNN
+F 1 "PE43711" H 5600 3000 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6300 3350 50  0001 C CNN
+F 3 "http://www.psemi.com/pdf/datasheets/pe43711ds.pdf" H 5900 2600 50  0001 C CNN
+F 4 "1046-1138-1-ND" H 6300 3450 50  0001 C CNN "Digi-Key PN"
+F 5 "RF ATTENUATOR 31.5DB 50OHM 24QFN" H 5200 1750 50  0000 L CNN "Description"
+	1    6300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:PE43711 U12
+U 1 1 5E6DF05D
+P 2850 8000
+AR Path="/5E5AB76A/5E6DF05D" Ref="U12"  Part="1" 
+AR Path="/5F1B6B3A/5E6DF05D" Ref="U36"  Part="1" 
+AR Path="/5F1B5C00/5E6DF05D" Ref="U20"  Part="1" 
+AR Path="/5F1B6B42/5E6DF05D" Ref="U28"  Part="1" 
+F 0 "U12" H 2300 8400 50  0000 L CNN
+F 1 "PE43711" H 2200 8500 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 2850 8850 50  0001 C CNN
+F 3 "http://www.psemi.com/pdf/datasheets/pe43711ds.pdf" H 2450 8100 50  0001 C CNN
+F 4 "1046-1138-1-ND" H 2850 8950 50  0001 C CNN "Digi-Key PN"
+F 5 "RF ATTENUATOR 31.5DB 50OHM 24QFN" H 1900 7300 50  0000 L CNN "Description"
+	1    2850 8000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:LPF04023600L F3
+U 1 1 5E6E8254
+P 10350 3050
+AR Path="/5E5AB76A/5E6E8254" Ref="F3"  Part="1" 
+AR Path="/5F1B6B3A/5E6E8254" Ref="F15"  Part="1" 
+AR Path="/5F1B5C00/5E6E8254" Ref="F7"  Part="1" 
+AR Path="/5F1B6B42/5E6E8254" Ref="F11"  Part="1" 
+F 0 "F3" H 10375 3275 50  0000 C CNN
+F 1 "LPF04023600L" H 10375 3184 50  0000 C CNN
+F 2 "jcg_custom:F_0402_1005Metric_2x2_LGA" H 10375 2400 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/American%20Technical%20Ceramics/0402_LPF_Series_DS.pdf" H 10350 3250 50  0001 C CNN
+F 4 "ATC" H 10350 3350 50  0001 C CNN "Manufacturer"
+F 5 "1284-1984-1-ND" H 10375 2300 50  0001 C CNN "Digi-Key PN"
+	1    10350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:LPF04023600L F2
+U 1 1 5E6EA02E
+P 7550 8850
+AR Path="/5E5AB76A/5E6EA02E" Ref="F2"  Part="1" 
+AR Path="/5F1B6B3A/5E6EA02E" Ref="F14"  Part="1" 
+AR Path="/5F1B5C00/5E6EA02E" Ref="F6"  Part="1" 
+AR Path="/5F1B6B42/5E6EA02E" Ref="F10"  Part="1" 
+F 0 "F2" H 7575 9075 50  0000 C CNN
+F 1 "LPF04023600L" H 7575 8984 50  0000 C CNN
+F 2 "jcg_custom:F_0402_1005Metric_2x2_LGA" H 7575 8200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/American%20Technical%20Ceramics/0402_LPF_Series_DS.pdf" H 7550 9050 50  0001 C CNN
+F 4 "ATC" H 7550 9150 50  0001 C CNN "Manufacturer"
+F 5 "1284-1984-1-ND" H 7575 8100 50  0001 C CNN "Digi-Key PN"
+	1    7550 8850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:DEA162300HT-8047A1 F5
+U 1 1 5E6EF44C
+P 11300 3050
+AR Path="/5E5AB76A/5E6EF44C" Ref="F5"  Part="1" 
+AR Path="/5F1B6B3A/5E6EF44C" Ref="F17"  Part="1" 
+AR Path="/5F1B5C00/5E6EF44C" Ref="F9"  Part="1" 
+AR Path="/5F1B6B42/5E6EF44C" Ref="F13"  Part="1" 
+F 0 "F5" H 11325 3275 50  0000 C CNN
+F 1 "DEA162300HT-8047A1" H 11325 3184 50  0000 C CNN
+F 2 "jcg_custom:F_DEA16_LGA" H 11325 2400 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/DEA162300HT-8047A1_Rev1_0.pdf" H 11300 3250 50  0001 C CNN
+F 4 "TDK" H 11300 3350 50  0001 C CNN "Manufacturer"
+F 5 "445-175383-1-ND" H 11325 2300 50  0001 C CNN "Digi-Key PN"
+	1    11300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:LP0603A2140ANTR F4
+U 1 1 5E6F2D0F
+P 10850 2000
+AR Path="/5E5AB76A/5E6F2D0F" Ref="F4"  Part="1" 
+AR Path="/5F1B6B3A/5E6F2D0F" Ref="F16"  Part="1" 
+AR Path="/5F1B5C00/5E6F2D0F" Ref="F8"  Part="1" 
+AR Path="/5F1B6B42/5E6F2D0F" Ref="F12"  Part="1" 
+F 0 "F4" H 10875 2225 50  0000 C CNN
+F 1 "LP0603A2140ANTR" H 10875 2134 50  0000 C CNN
+F 2 "jcg_custom:F_0603_2x2_LGA" H 10875 1350 50  0001 C CNN
+F 3 "http://datasheets.avx.com/lp0603.pdf" H 10850 2200 50  0001 C CNN
+F 4 "AVX" H 10850 2300 50  0001 C CNN "Manufacturer"
+F 5 "478-2914-1-ND" H 10875 1250 50  0001 C CNN "Digi-Key PN"
+	1    10850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:MABA-011082 T2
+U 1 1 5E6F736E
+P 13350 4050
+AR Path="/5E5AB76A/5E6F736E" Ref="T2"  Part="1" 
+AR Path="/5F1B6B3A/5E6F736E" Ref="T8"  Part="1" 
+AR Path="/5F1B5C00/5E6F736E" Ref="T4"  Part="1" 
+AR Path="/5F1B6B42/5E6F736E" Ref="T6"  Part="1" 
+F 0 "T2" H 13350 4465 50  0000 C CNN
+F 1 "MABA-011082" H 13350 4374 50  0000 C CNN
+F 2 "jcg_custom:T_6pin_23_balun" H 13350 3750 50  0001 C CNN
+F 3 "https://cdn.macom.com/datasheets/MABA-011082.pdf" H 13350 4110 50  0001 C CNN
+F 4 "1:1 Transformer Balun 5 - 8000 MHz" H 13350 4283 50  0000 C CNN "Description"
+F 5 "1465-1843-1-ND" H 13350 4500 50  0001 C CNN "Digi-Key PN"
+	1    13350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L jcg_custom_parts:MABA-011082 T1
+U 1 1 5E6FA905
+P 8750 8950
+AR Path="/5E5AB76A/5E6FA905" Ref="T1"  Part="1" 
+AR Path="/5F1B6B3A/5E6FA905" Ref="T7"  Part="1" 
+AR Path="/5F1B5C00/5E6FA905" Ref="T3"  Part="1" 
+AR Path="/5F1B6B42/5E6FA905" Ref="T5"  Part="1" 
+F 0 "T1" H 8750 9365 50  0000 C CNN
+F 1 "MABA-011082" H 8750 9274 50  0000 C CNN
+F 2 "jcg_custom:T_6pin_23_balun" H 8750 8650 50  0001 C CNN
+F 3 "https://cdn.macom.com/datasheets/MABA-011082.pdf" H 8750 9010 50  0001 C CNN
+F 4 "1:1 Transformer Balun 5 - 8000 MHz" H 8750 9183 50  0000 C CNN "Description"
+F 5 "1465-1843-1-ND" H 8750 9400 50  0001 C CNN "Digi-Key PN"
+	1    8750 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6C2C17
+P 14500 3950
+AR Path="/5E6C2C17" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6C2C17" Ref="C57"  Part="1" 
+AR Path="/5F1B5C00/5E6C2C17" Ref="C83"  Part="1" 
+AR Path="/5F1B6B3A/5E6C2C17" Ref="C135"  Part="1" 
+AR Path="/5F1B6B42/5E6C2C17" Ref="C109"  Part="1" 
+F 0 "C57" V 14248 3950 50  0000 C CNN
+F 1 "330pF" V 14339 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 14340 3950 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0402C331J5GACTU.pdf" H 14500 3950 50  0001 C CNN
+F 4 "399-7787-1-ND" V 14500 3950 50  0001 C CNN "Digi-Key PN"
+F 5 "330pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)" V 14500 3950 50  0001 C CNN "Description"
+	1    14500 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6FF97B
+P 3950 7400
+AR Path="/5E6FF97B" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E6FF97B" Ref="C38"  Part="1" 
+AR Path="/5F1B5C00/5E6FF97B" Ref="C64"  Part="1" 
+AR Path="/5F1B6B3A/5E6FF97B" Ref="C116"  Part="1" 
+AR Path="/5F1B6B42/5E6FF97B" Ref="C90"  Part="1" 
+F 0 "C38" H 3650 7450 50  0000 C CNN
+F 1 "0.1µF" H 3700 7350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 3790 7400 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf" H 3950 7400 50  0001 C CNN
+F 4 "490-13342-1-ND" H 3950 7400 50  0001 C CNN "Digi-Key PN"
+F 5 "0.1µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 3950 7400 50  0001 C CNN "Description"
+	1    3950 7400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7C4532
+P 12550 7200
+AR Path="/5E7C4532" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E7C4532" Ref="C55"  Part="1" 
+AR Path="/5F1B5C00/5E7C4532" Ref="C81"  Part="1" 
+AR Path="/5F1B6B3A/5E7C4532" Ref="C133"  Part="1" 
+AR Path="/5F1B6B42/5E7C4532" Ref="C107"  Part="1" 
+F 0 "C55" H 12250 7250 50  0000 C CNN
+F 1 "0.1µF" H 12300 7150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 12390 7200 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf" H 12550 7200 50  0001 C CNN
+F 4 "490-13342-1-ND" H 12550 7200 50  0001 C CNN "Digi-Key PN"
+F 5 "0.1µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 12550 7200 50  0001 C CNN "Description"
+	1    12550 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7DE41E
+P 15550 8600
+AR Path="/5E7DE41E" Ref="C?"  Part="1" 
+AR Path="/5E5AB76A/5E7DE41E" Ref="C59"  Part="1" 
+AR Path="/5F1B5C00/5E7DE41E" Ref="C85"  Part="1" 
+AR Path="/5F1B6B3A/5E7DE41E" Ref="C137"  Part="1" 
+AR Path="/5F1B6B42/5E7DE41E" Ref="C111"  Part="1" 
+F 0 "C59" H 15250 8650 50  0000 C CNN
+F 1 "0.1µF" H 15300 8550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 15390 8600 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf" H 15550 8600 50  0001 C CNN
+F 4 "490-13342-1-ND" H 15550 8600 50  0001 C CNN "Digi-Key PN"
+F 5 "0.1µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)" H 15550 8600 50  0001 C CNN "Description"
+	1    15550 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E7E1734
+P 12950 7200
+AR Path="/5E86F12A/5E7E1734" Ref="R?"  Part="1" 
+AR Path="/5F1B6B3A/5E7E1734" Ref="R29"  Part="1" 
+AR Path="/5E5AB76A/5E7E1734" Ref="R26"  Part="1" 
+AR Path="/5F1B5C00/5E7E1734" Ref="R27"  Part="1" 
+AR Path="/5F1B6B42/5E7E1734" Ref="R28"  Part="1" 
+F 0 "R26" H 13018 7246 50  0000 L CNN
+F 1 "10k" H 13018 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12990 7190 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 12950 7200 50  0001 C CNN
+F 4 "311-10.0KLRCT-ND" H 12950 7200 50  0001 C CNN "Digi-Key PN"
+F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film" H 12950 7200 50  0001 C CNN "Description"
+	1    12950 7200
 	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

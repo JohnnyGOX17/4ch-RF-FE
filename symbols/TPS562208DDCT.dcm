@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS562208DDCT
+D IC REG BUCK ADJ 2A TSOT23-6
+F http://www.ti.com/lit/ds/symlink/tps562208.pdf
+$ENDCMP
+#
+#End Doc Library

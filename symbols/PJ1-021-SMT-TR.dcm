@@ -1,6 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP PJ1-021-SMT-TR
+D CONN PWR JACK 1.75X4.75MM SOLDER
 F https://www.cuidevices.com/product/resource/pj1-021-smt-tr.pdf
 $ENDCMP
 #
