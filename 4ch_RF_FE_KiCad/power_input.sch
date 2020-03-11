@@ -222,9 +222,9 @@ Wire Wire Line
 	6800 1650 6800 1700
 Wire Wire Line
 	6800 1700 6850 1700
-Text Label 6850 1700 0    50   ~ 0
-sense12V_P
 Text Label 6850 1800 0    50   ~ 0
+sense12V_P
+Text Label 6850 1700 0    50   ~ 0
 sense12V_N
 Wire Wire Line
 	6100 1800 6850 1800

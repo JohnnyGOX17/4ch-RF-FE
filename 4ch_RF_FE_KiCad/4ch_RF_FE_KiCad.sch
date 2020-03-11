@@ -277,4 +277,143 @@ F6 "~1ST_NYQ~_2ND_NYQ_SW" I L 8450 4450 50
 F7 "~1ST_NYQ~_2ND_NYQ_SW_INV" I L 8450 4550 50 
 F8 "+5V_REG" I R 9900 4850 50 
 $EndSheet
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5E721B81
+P 13550 5900
+F 0 "FID1" H 13635 5946 50  0000 L CNN
+F 1 "Fiducial" H 13635 5855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13550 5900 50  0001 C CNN
+F 3 "~" H 13550 5900 50  0001 C CNN
+	1    13550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5E72208F
+P 13550 6100
+F 0 "FID2" H 13635 6146 50  0000 L CNN
+F 1 "Fiducial" H 13635 6055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13550 6100 50  0001 C CNN
+F 3 "~" H 13550 6100 50  0001 C CNN
+	1    13550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5E72279F
+P 13550 6300
+F 0 "FID3" H 13635 6346 50  0000 L CNN
+F 1 "Fiducial" H 13635 6255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13550 6300 50  0001 C CNN
+F 3 "~" H 13550 6300 50  0001 C CNN
+	1    13550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E7250E7
+P 14150 5950
+F 0 "H1" H 14250 5999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14250 5908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14150 5950 50  0001 C CNN
+F 3 "~" H 14150 5950 50  0001 C CNN
+	1    14150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0197
+U 1 1 5E72794C
+P 14150 6100
+F 0 "#PWR0197" H 14150 5850 50  0001 C CNN
+F 1 "GND" H 14155 5927 50  0000 C CNN
+F 2 "" H 14150 6100 50  0001 C CNN
+F 3 "" H 14150 6100 50  0001 C CNN
+	1    14150 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 6100 14150 6050
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E7299ED
+P 14150 6500
+F 0 "H2" H 14250 6549 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14250 6458 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14150 6500 50  0001 C CNN
+F 3 "~" H 14150 6500 50  0001 C CNN
+	1    14150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0198
+U 1 1 5E7299F7
+P 14150 6650
+F 0 "#PWR0198" H 14150 6400 50  0001 C CNN
+F 1 "GND" H 14155 6477 50  0000 C CNN
+F 2 "" H 14150 6650 50  0001 C CNN
+F 3 "" H 14150 6650 50  0001 C CNN
+	1    14150 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 6650 14150 6600
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E72CE24
+P 14150 7050
+F 0 "H3" H 14250 7099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14250 7008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14150 7050 50  0001 C CNN
+F 3 "~" H 14150 7050 50  0001 C CNN
+	1    14150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0199
+U 1 1 5E72CE2E
+P 14150 7200
+F 0 "#PWR0199" H 14150 6950 50  0001 C CNN
+F 1 "GND" H 14155 7027 50  0000 C CNN
+F 2 "" H 14150 7200 50  0001 C CNN
+F 3 "" H 14150 7200 50  0001 C CNN
+	1    14150 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 7200 14150 7150
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E72CE39
+P 14150 7600
+F 0 "H4" H 14250 7649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 14250 7558 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm_Pad_Via" H 14150 7600 50  0001 C CNN
+F 3 "~" H 14150 7600 50  0001 C CNN
+	1    14150 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 5E72CE43
+P 14150 7750
+F 0 "#PWR0200" H 14150 7500 50  0001 C CNN
+F 1 "GND" H 14155 7577 50  0000 C CNN
+F 2 "" H 14150 7750 50  0001 C CNN
+F 3 "" H 14150 7750 50  0001 C CNN
+	1    14150 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 7750 14150 7700
+Text Notes 13700 5650 0    118  ~ 24
+Mechanical
+Wire Notes Line
+	13400 5400 13400 8150
+Wire Notes Line
+	13400 8150 15050 8150
+Wire Notes Line
+	15050 8150 15050 5400
+Wire Notes Line
+	15050 5400 13400 5400
 $EndSCHEMATC

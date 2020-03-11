@@ -188,6 +188,37 @@ X VOUT 3 600 50 300 L 59 59 1 1 O
 ENDDRAW
 ENDDEF
 #
+# Mechanical_Fiducial
+#
+DEF Mechanical_Fiducial FID 0 20 Y Y 1 F N
+F0 "FID" 0 200 50 H V C CNN
+F1 "Mechanical_Fiducial" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Fiducial*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 20 f
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Memory_EEPROM_M24C02-FDW
 #
 DEF Memory_EEPROM_M24C02-FDW U 0 20 Y Y 1 F N
@@ -499,8 +530,8 @@ P 2 0 1 0 -90 10 90 10 N
 P 2 0 1 0 -80 50 -100 50 N
 P 2 0 1 0 80 -50 100 -50 N
 P 2 0 1 0 100 50 80 50 N
-X ~ 1 -200 50 100 R 50 50 1 1 I
-X ~ 2 -200 -50 100 R 50 50 1 1 I
+X ~ 1 -200 -50 100 R 50 50 1 1 I
+X ~ 2 -200 50 100 R 50 50 1 1 I
 X ~ 3 200 -50 100 L 50 50 1 1 I
 X ~ 4 200 50 100 L 50 50 1 1 I
 ENDDRAW

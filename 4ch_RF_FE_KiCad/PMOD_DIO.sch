@@ -19,7 +19,7 @@ U 1 1 5E872808
 P 3700 1750
 F 0 "J2" H 3700 2303 60  0000 C CNN
 F 1 "PPTC062LJBN-RC" H 3700 2197 60  0000 C CNN
-F 2 "digikey-footprints:PinHeader_2x6_P2.54mm_Vertical_SMD" H 3900 1950 60  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 3900 1950 60  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf" H 3900 2050 60  0001 L CNN
 F 4 "S5520-ND" H 3900 2150 60  0001 L CNN "Digi-Key_PN"
 F 5 "Connectors, Interconnects" H 3900 2350 60  0001 L CNN "Category"
