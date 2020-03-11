@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name digikey-footprints)(type KiCad)(uri /Users/johngentile/src/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri /Users/johngentile/src/4ch-RF-FE/symbols/footprints.pretty)(options "")(descr ""))
-  (lib (name jcg_custom)(type KiCad)(uri /Users/johngentile/src/4ch-RF-FE/symbols/jcg_custom.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints.pretty)(options "")(descr ""))
+  (lib (name jcg_custom)(type KiCad)(uri ${KIPRJMOD}/jcg_custom.pretty)(options "")(descr ""))
 )
