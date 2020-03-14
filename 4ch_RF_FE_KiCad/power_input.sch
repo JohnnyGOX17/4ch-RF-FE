@@ -363,29 +363,20 @@ F 5 "IC REG BUCK ADJ 2A TSOT23-6" H 11350 2750 50  0000 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 2200 10400 2200
-Wire Wire Line
-	10400 2200 10400 2300
-Wire Wire Line
-	10400 2300 10550 2300
-Wire Wire Line
-	10200 2350 10200 2200
-Wire Wire Line
-	10200 2200 10400 2200
-Connection ~ 10400 2200
+	9700 2350 9700 2200
 $Comp
 L power:GND #PWR014
 U 1 1 5F8C519E
-P 10200 2700
-F 0 "#PWR014" H 10200 2450 50  0001 C CNN
-F 1 "GND" H 10205 2527 50  0000 C CNN
-F 2 "" H 10200 2700 50  0001 C CNN
-F 3 "" H 10200 2700 50  0001 C CNN
-	1    10200 2700
+P 9700 2700
+F 0 "#PWR014" H 9700 2450 50  0001 C CNN
+F 1 "GND" H 9705 2527 50  0000 C CNN
+F 2 "" H 9700 2700 50  0001 C CNN
+F 3 "" H 9700 2700 50  0001 C CNN
+	1    9700 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 2700 10200 2650
+	9700 2700 9700 2650
 Wire Wire Line
 	12150 2400 12300 2400
 Wire Wire Line
@@ -507,11 +498,11 @@ Text Label 6850 1500 0    50   Italic 0
 Vin_unreg
 Wire Wire Line
 	6850 1500 6700 1500
-Text Label 10050 2200 2    50   Italic 0
+Text Label 9550 2200 2    50   Italic 0
 Vin_unreg
 Wire Wire Line
-	10050 2200 10200 2200
-Connection ~ 10200 2200
+	9550 2200 9700 2200
+Connection ~ 9700 2200
 Text Label 14500 2200 0    50   Italic 0
 5V5_SW
 Wire Wire Line
@@ -1105,7 +1096,7 @@ F 0 "L1" H 4300 1600 50  0000 C CNN
 F 1 "ACP3225" H 4300 1900 50  0000 C CNN
 F 2 "jcg_custom:CMC_3225_2x2_LGA" H 4300 1500 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_power_acp3225_en.pdf" H 4300 1800 50  0001 C CNN
-F 4 "CMC 500 Ohms @ 100MHz 2A DCR 40 mOhm" H 4300 2100 50  0000 C CNN "Description"
+F 4 "CMC 500 Ohms @ 100MHz 2A DCR 40 mOhm" H 4300 1400 50  0000 C CNN "Description"
 F 5 "445-172408-1-ND" H 4300 2250 50  0001 C CNN "Digi-Key PN"
 	1    4300 1750
 	1    0    0    -1  
@@ -1126,19 +1117,19 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E79CAAE
-P 10200 2500
+P 9700 2500
 AR Path="/5E79CAAE" Ref="C?"  Part="1" 
 AR Path="/5E5AB76A/5E79CAAE" Ref="C?"  Part="1" 
 AR Path="/5E86F12A/5E79CAAE" Ref="C?"  Part="1" 
 AR Path="/5E5BBCD5/5E79CAAE" Ref="C25"  Part="1" 
-F 0 "C25" H 9950 2550 50  0000 C CNN
-F 1 "10µF" H 9950 2450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10040 2500 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B106KAHNNNE.jsp" H 10200 2500 50  0001 C CNN
-F 4 "1276-1804-1-ND" H 10200 2500 50  0001 C CNN "Digi-Key PN"
-F 5 "10µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)" H 10200 2500 50  0001 C CNN "Description"
-	1    10200 2500
-	-1   0    0    -1  
+F 0 "C25" H 9450 2550 50  0000 C CNN
+F 1 "10µF" H 9450 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9540 2500 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B106KAHNNNE.jsp" H 9700 2500 50  0001 C CNN
+F 4 "1276-1804-1-ND" H 9700 2500 50  0001 C CNN "Digi-Key PN"
+F 5 "10µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)" H 9700 2500 50  0001 C CNN "Description"
+	1    9700 2500
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -1447,4 +1438,42 @@ F 5 "10µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)" H 7750 9550 50  0
 	1    7750 9550
 	-1   0    0    -1  
 $EndComp
+Text Label 2150 1500 0    50   ~ 0
+PWR_IN
+Text Label 3150 1500 0    50   ~ 0
+PWR_IN_FUSED
+Text Label 4950 1500 0    50   ~ 0
+PWR_IN_CMC
+Text Label 2300 2000 0    50   ~ 0
+PWR_RETURN
+Text Label 12300 2200 0    50   ~ 0
+V_SW_NODE
+Text Label 12750 2700 0    50   ~ 0
+V_FB
+$Comp
+L Device:R_US R?
+U 1 1 5E70F1EB
+P 10250 2300
+AR Path="/5E86F12A/5E70F1EB" Ref="R?"  Part="1" 
+AR Path="/5E5BBCD5/5E70F1EB" Ref="R30"  Part="1" 
+F 0 "R30" V 10450 2250 50  0000 L CNN
+F 1 "10k" V 10350 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10290 2290 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 10250 2300 50  0001 C CNN
+F 4 "311-10.0KLRCT-ND" H 10250 2300 50  0001 C CNN "Digi-Key PN"
+F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film" H 10250 2300 50  0001 C CNN "Description"
+	1    10250 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 2300 10000 2300
+Wire Wire Line
+	10000 2300 10000 2200
+Wire Wire Line
+	9700 2200 10000 2200
+Wire Wire Line
+	10000 2200 10550 2200
+Connection ~ 10000 2200
+Wire Wire Line
+	10400 2300 10550 2300
 $EndSCHEMATC

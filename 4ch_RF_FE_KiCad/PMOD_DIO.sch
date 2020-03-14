@@ -1451,4 +1451,20 @@ F 5 "100 Ohms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resis
 	1    14300 3500
 	0    1    1    0   
 $EndComp
+Text Label 10850 1500 0    50   ~ 0
+~RX~_TX_SW0_BUF
+Text Label 10850 1800 0    50   ~ 0
+~RX~_TX_SW1_BUF
+Text Label 13250 1600 0    50   ~ 0
+~RX~_TX_SW3_BUF
+Text Label 13250 1900 0    50   ~ 0
+~RX~_TX_SW2_BUF
+Text Label 11050 3200 0    50   ~ 0
+~RX~_TX_SW0_INV_BUF
+Text Label 11050 3400 0    50   ~ 0
+~RX~_TX_SW1_INV_BUF
+Text Label 11050 3600 0    50   ~ 0
+~RX~_TX_SW2_INV_BUF
+Text Label 12900 3700 0    50   ~ 0
+~RX~_TX_SW3_INV_BUF
 $EndSCHEMATC
