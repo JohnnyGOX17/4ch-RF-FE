@@ -687,20 +687,6 @@ Wire Wire Line
 Connection ~ 4700 1000
 Wire Wire Line
 	4700 1000 4800 1000
-Wire Wire Line
-	3200 6400 3300 6400
-Wire Wire Line
-	3300 6400 3300 6350
-Wire Wire Line
-	3200 6500 3400 6500
-Wire Wire Line
-	3200 6600 3500 6600
-Wire Wire Line
-	3500 6600 3500 6350
-Wire Wire Line
-	3600 6350 3600 6700
-Wire Wire Line
-	3600 6700 3200 6700
 Text HLabel 5750 6400 2    50   Output Italic 0
 RF_CH0_ATTN_SCL
 $Comp
@@ -790,58 +776,12 @@ Wire Wire Line
 Connection ~ 4600 5900
 Wire Wire Line
 	4600 5900 4250 5900
-Wire Wire Line
-	3950 6350 3950 6800
-Wire Wire Line
-	3950 6800 3200 6800
-Wire Wire Line
-	3200 6900 4050 6900
-Wire Wire Line
-	4050 6900 4050 6350
-Wire Wire Line
-	3200 7000 4150 7000
-Wire Wire Line
-	4150 7000 4150 6350
-Wire Wire Line
-	3200 7100 4250 7100
-Wire Wire Line
-	4250 7100 4250 6350
-Wire Wire Line
-	3200 7200 4600 7200
-Wire Wire Line
-	4600 7200 4600 6350
-Wire Wire Line
-	3200 7300 4700 7300
-Wire Wire Line
-	4700 7300 4700 6350
-Wire Wire Line
-	3200 7400 4800 7400
-Wire Wire Line
-	4800 7400 4800 6350
-Wire Wire Line
-	3200 7500 4900 7500
-Wire Wire Line
-	4900 7500 4900 6350
-Wire Wire Line
-	5750 6400 3300 6400
-Connection ~ 3300 6400
 Text HLabel 5750 6500 2    50   BiDi Italic 0
 RF_CH0_ATTN_SDA
-Wire Wire Line
-	3400 6500 3400 6350
-Wire Wire Line
-	3400 6500 5750 6500
-Connection ~ 3400 6500
 Text HLabel 5750 6600 2    50   Output Italic 0
 RF_CH1_ATTN_SCL
 Text HLabel 5750 6700 2    50   BiDi Italic 0
 RF_CH1_ATTN_SDA
-Wire Wire Line
-	5750 6600 3500 6600
-Connection ~ 3500 6600
-Wire Wire Line
-	3600 6700 5750 6700
-Connection ~ 3600 6700
 Text HLabel 5750 6800 2    50   Output Italic 0
 RF_CH2_ATTN_SCL
 Text HLabel 5750 6900 2    50   BiDi Italic 0
@@ -850,44 +790,20 @@ Text HLabel 5750 7000 2    50   Output Italic 0
 RF_CH3_ATTN_SCL
 Text HLabel 5750 7100 2    50   BiDi Italic 0
 RF_CH3_ATTN_SDA
-Wire Wire Line
-	5750 6800 3950 6800
-Connection ~ 3950 6800
-Wire Wire Line
-	4050 6900 5750 6900
-Connection ~ 4050 6900
-Wire Wire Line
-	5750 7000 4150 7000
-Connection ~ 4150 7000
-Wire Wire Line
-	4250 7100 5750 7100
-Connection ~ 4250 7100
 Text Notes 6750 6800 0    50   Italic 0
 ADDR: 0x20
 Text Notes 6750 7300 0    50   Italic 0
 ADDR: 0x40
 Text HLabel 5750 7200 2    50   Output Italic 0
 INA219_PWR_MON_SCL
-Wire Wire Line
-	5750 7200 4600 7200
-Connection ~ 4600 7200
 Text HLabel 5750 7300 2    50   BiDi Italic 0
 INA219_PWR_MON_SDA
-Wire Wire Line
-	5750 7300 4700 7300
-Connection ~ 4700 7300
 Wire Notes Line
 	5700 6300 5700 7150
 Text Label 5800 7400 0    50   Italic 0
 EEPROM_SCL
 Text Label 5800 7500 0    50   Italic 0
 EEPROM_SDA
-Wire Wire Line
-	4800 7400 5800 7400
-Connection ~ 4800 7400
-Wire Wire Line
-	5800 7500 4900 7500
-Connection ~ 4900 7500
 Text Notes 6750 7450 0    50   Italic 0
 ADDR: 0x50
 $Comp
@@ -1160,13 +1076,8 @@ Wire Wire Line
 	2250 7500 2250 7600
 Text Notes 1900 8100 0    50   Italic 10
 ADDR: 0x70
-NoConn ~ 3200 7600
-NoConn ~ 3200 7700
-NoConn ~ 3200 7800
-NoConn ~ 3200 7900
 Wire Notes Line
 	500  3900 7250 3900
-NoConn ~ 3500 1850
 Text Notes 7750 2550 0    118  ~ 24
 DIO Buffer & Inversion for RF SPDTs
 Wire Notes Line
@@ -1467,4 +1378,123 @@ Text Label 11050 3600 0    50   ~ 0
 ~RX~_TX_SW2_INV_BUF
 Text Label 12900 3700 0    50   ~ 0
 ~RX~_TX_SW3_INV_BUF
+Wire Wire Line
+	3500 1850 3250 1850
+Wire Wire Line
+	3250 1850 3250 1950
+Connection ~ 3250 1950
+$Comp
+L power:GND #PWR0201
+U 1 1 5E870FEA
+P 3300 8000
+F 0 "#PWR0201" H 3300 7750 50  0001 C CNN
+F 1 "GND" H 3305 7827 50  0000 C CNN
+F 2 "" H 3300 8000 50  0001 C CNN
+F 3 "" H 3300 8000 50  0001 C CNN
+	1    3300 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7600 3300 7600
+Wire Wire Line
+	3300 7600 3300 7700
+Wire Wire Line
+	3200 7700 3300 7700
+Connection ~ 3300 7700
+Wire Wire Line
+	3300 7700 3300 7800
+Wire Wire Line
+	3200 7800 3300 7800
+Connection ~ 3300 7800
+Wire Wire Line
+	3300 7800 3300 7900
+Wire Wire Line
+	3200 7900 3300 7900
+Connection ~ 3300 7900
+Wire Wire Line
+	3300 7900 3300 8000
+Wire Wire Line
+	3200 7500 4700 7500
+Wire Wire Line
+	3200 7400 4600 7400
+Wire Wire Line
+	3200 7300 4900 7300
+Wire Wire Line
+	3200 7200 4800 7200
+Wire Wire Line
+	4600 6350 4600 7400
+Connection ~ 4600 7400
+Wire Wire Line
+	4600 7400 5800 7400
+Wire Wire Line
+	4700 6350 4700 7500
+Connection ~ 4700 7500
+Wire Wire Line
+	4700 7500 5800 7500
+Wire Wire Line
+	4800 6350 4800 7200
+Connection ~ 4800 7200
+Wire Wire Line
+	4800 7200 5750 7200
+Wire Wire Line
+	4900 6350 4900 7300
+Connection ~ 4900 7300
+Wire Wire Line
+	4900 7300 5750 7300
+Wire Wire Line
+	3200 7100 4050 7100
+Wire Wire Line
+	3200 7000 3950 7000
+Wire Wire Line
+	3200 6800 4150 6800
+Wire Wire Line
+	3950 6350 3950 7000
+Connection ~ 3950 7000
+Wire Wire Line
+	3950 7000 5750 7000
+Wire Wire Line
+	4050 6350 4050 7100
+Connection ~ 4050 7100
+Wire Wire Line
+	4050 7100 5750 7100
+Wire Wire Line
+	4150 6350 4150 6800
+Connection ~ 4150 6800
+Wire Wire Line
+	4150 6800 5750 6800
+Wire Wire Line
+	4250 6350 4250 6900
+Wire Wire Line
+	3200 6900 4250 6900
+Connection ~ 4250 6900
+Wire Wire Line
+	4250 6900 5750 6900
+Wire Wire Line
+	3200 6700 3400 6700
+Wire Wire Line
+	3200 6600 3300 6600
+Wire Wire Line
+	3200 6500 3600 6500
+Wire Wire Line
+	3200 6400 3500 6400
+Wire Wire Line
+	3300 6350 3300 6600
+Connection ~ 3300 6600
+Wire Wire Line
+	3300 6600 5750 6600
+Wire Wire Line
+	3400 6350 3400 6700
+Connection ~ 3400 6700
+Wire Wire Line
+	3400 6700 5750 6700
+Wire Wire Line
+	3500 6350 3500 6400
+Connection ~ 3500 6400
+Wire Wire Line
+	3500 6400 5750 6400
+Wire Wire Line
+	3600 6350 3600 6500
+Connection ~ 3600 6500
+Wire Wire Line
+	3600 6500 5750 6500
 $EndSCHEMATC

@@ -1282,12 +1282,6 @@ Wire Wire Line
 Wire Wire Line
 	9200 2950 8900 2950
 Wire Wire Line
-	8900 3050 9000 3050
-Wire Wire Line
-	9000 3050 9000 3300
-Wire Wire Line
-	9000 3300 9450 3300
-Wire Wire Line
 	10800 3050 10900 3050
 Wire Wire Line
 	7500 9300 7500 9250
@@ -1346,12 +1340,6 @@ Wire Wire Line
 Connection ~ 11350 3450
 Wire Wire Line
 	11350 3450 11600 3450
-Wire Wire Line
-	8900 2850 9300 2850
-Wire Wire Line
-	9300 2850 9300 2500
-Wire Wire Line
-	9300 2500 9450 2500
 $Comp
 L power:GND #PWR070
 U 1 1 5EE985EE
@@ -1629,8 +1617,6 @@ Wire Notes Line
 	4800 4400 500  4400
 Text Notes 13450 6350 0    118  ~ 24
 I2C GPIO Expander
-Text HLabel 7700 3250 0    50   Input Italic 0
-~1ST_NYQ~_2ND_NYQ_SW
 Text Notes 8100 3450 0    50   Italic 0
 RFC-RF1: A=0,B=1\nRFC-RF2: A=1,B=0\nP1dB  = 39 dBm\nt_switch  = 30 ns
 Text Notes 12750 2100 0    50   Italic 0
@@ -1650,12 +1636,10 @@ F 3 "" H 7250 2600 50  0001 C CNN
 	1    7250 2600
 	1    0    0    -1  
 $EndComp
-Text Notes 5600 3550 0    50   Italic 0
+Text Notes 5450 3550 0    50   Italic 0
 7-bit (0.25dB) DSA\nAttn: 0 - 31.75 dB\nBW: 9 kHz - 6 GHz
 Text Notes 2500 9000 0    50   Italic 0
 7-bit (0.25dB) DSA\nAttn: 0 - 31.75 dB\nBW: 9 kHz - 6 GHz
-Text HLabel 8000 2300 2    50   Input Italic 0
-~1ST_NYQ~_2ND_NYQ_SW_INV
 Wire Wire Line
 	8000 2850 7750 2850
 Wire Wire Line
@@ -2069,7 +2053,7 @@ F 1 "PE43711" H 5600 3000 50  0000 L CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6300 3350 50  0001 C CNN
 F 3 "http://www.psemi.com/pdf/datasheets/pe43711ds.pdf" H 5900 2600 50  0001 C CNN
 F 4 "1046-1138-1-ND" H 6300 3450 50  0001 C CNN "Digi-Key PN"
-F 5 "RF ATTENUATOR 31.5DB 50OHM 24QFN" H 5200 1750 50  0000 L CNN "Description"
+F 5 "RF ATTENUATOR 31.5DB 50OHM 24QFN" H 4750 1750 50  0000 L CNN "Description"
 	1    6300 2500
 	1    0    0    -1  
 $EndComp
@@ -2282,4 +2266,20 @@ F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resis
 	1    12950 7200
 	-1   0    0    -1  
 $EndComp
+Text HLabel 7700 3250 0    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW_INV
+Text HLabel 8000 2300 2    50   Input Italic 0
+~1ST_NYQ~_2ND_NYQ_SW
+Wire Wire Line
+	9450 3300 9350 3300
+Wire Wire Line
+	9350 3300 9350 2850
+Wire Wire Line
+	9350 2850 8900 2850
+Wire Wire Line
+	9450 2500 9100 2500
+Wire Wire Line
+	9100 2500 9100 3050
+Wire Wire Line
+	8900 3050 9100 3050
 $EndSCHEMATC
