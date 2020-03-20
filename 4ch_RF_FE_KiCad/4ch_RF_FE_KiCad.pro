@@ -1,4 +1,4 @@
-update=Fri 13 Mar 2020 07:24:56 PM EDT
+update=Thu 19 Mar 2020 12:11:20 PM EDT
 last_client=kicad
 [general]
 version=1
@@ -78,11 +78,11 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=PWR.Cu
+Name=GND.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=GND.Cu
+Name=PWR.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]

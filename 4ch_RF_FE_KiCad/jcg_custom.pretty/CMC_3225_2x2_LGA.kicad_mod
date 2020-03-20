@@ -1,4 +1,4 @@
-(module CMC_3225_2x2_LGA (layer F.Cu) (tedit 5E6497CF)
+(module CMC_3225_2x2_LGA (layer F.Cu) (tedit 5E746EB3)
   (descr "LGA TDK CMC")
   (attr smd)
   (fp_text reference REF** (at 0.025 -1.85) (layer F.SilkS)
@@ -22,9 +22,9 @@
   (pad 4 smd rect (at 1.4 -0.575) (size 0.9 0.4) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -1.4 -0.575) (size 0.9 0.4) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -1.4 0.575) (size 0.9 0.4) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl
+  (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.wrl
     (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (scale (xyz 0.4 0.6 0.6))
+    (rotate (xyz 0 0 90))
   )
 )

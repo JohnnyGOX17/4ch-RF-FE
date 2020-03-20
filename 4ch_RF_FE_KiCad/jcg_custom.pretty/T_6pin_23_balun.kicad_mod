@@ -1,4 +1,4 @@
-(module T_6pin_23_balun (layer F.Cu) (tedit 5E648749)
+(module T_6pin_23_balun (layer F.Cu) (tedit 5E746768)
   (descr "6 Pin SMD for Macom Balun")
   (attr smd)
   (fp_text reference REF** (at 0 -3.55) (layer F.SilkS)
@@ -24,9 +24,9 @@
   (pad 1 smd rect (at -1.27 1.715) (size 0.76 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 5 smd rect (at 0 -1.715) (size 0.76 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 6 smd rect (at -1.27 -1.715) (size 0.76 1.4) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl
+  (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_Array_Convex_4x0603.wrl
     (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (scale (xyz 1.8 1 1))
+    (rotate (xyz 0 0 90))
   )
 )
