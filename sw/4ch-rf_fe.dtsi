@@ -1,0 +1,99 @@
+&i2c {
+	i2c-switch@70 { /* PCA9548APW 8-channel I2C MUX [U7] */
+		compatible = "nxp,pca9548";
+		reg = <0x70>;
+		/* reset pulled-up to +3V3 rail */
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		i2c@0 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <0>;
+
+			gpio_rf_ch3: gpio@20 { /* PCAL6416APW x16 GPIO expander, RF Ch 3 [U34] */
+				compatible = "nxp,pcal6416";
+				reg = <0x20>;
+				#gpio-cells = <2>;
+				gpio-controller;
+				gpio-line-names = "LE_RX", "atten_0.25dB_RX", "atten_0.5dB_RX",
+				"atten_1dB_RX", "atten_2dB_RX", "atten_4dB_RX", "atten_8dB_RX",
+				"atten_16dB_RX", "LE_TX", "atten_0.25dB_TX", "atten_0.5dB_TX",
+				"atten_1dB_TX", "atten_2dB_TX", "atten_4dB_TX", "atten_8dB_TX",
+				"atten_16dB_TX";
+			};
+		};
+		i2c@1 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <1>;
+
+			gpio_rf_ch2: gpio@20 { /* PCAL6416APW x16 GPIO expander, RF Ch 2 [U42] */
+				compatible = "nxp,pcal6416";
+				reg = <0x20>;
+				#gpio-cells = <2>;
+				gpio-controller;
+				gpio-line-names = "LE_RX", "atten_0.25dB_RX", "atten_0.5dB_RX",
+				"atten_1dB_RX", "atten_2dB_RX", "atten_4dB_RX", "atten_8dB_RX",
+				"atten_16dB_RX", "LE_TX", "atten_0.25dB_TX", "atten_0.5dB_TX",
+				"atten_1dB_TX", "atten_2dB_TX", "atten_4dB_TX", "atten_8dB_TX",
+				"atten_16dB_TX";
+			};
+		};
+		i2c@2 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <2>;
+
+			gpio_rf_ch1: gpio@20 { /* PCAL6416APW x16 GPIO expander, RF Ch 1 [U26] */
+				compatible = "nxp,pcal6416";
+				reg = <0x20>;
+				#gpio-cells = <2>;
+				gpio-controller;
+				gpio-line-names = "LE_RX", "atten_0.25dB_RX", "atten_0.5dB_RX",
+				"atten_1dB_RX", "atten_2dB_RX", "atten_4dB_RX", "atten_8dB_RX",
+				"atten_16dB_RX", "LE_TX", "atten_0.25dB_TX", "atten_0.5dB_TX",
+				"atten_1dB_TX", "atten_2dB_TX", "atten_4dB_TX", "atten_8dB_TX",
+				"atten_16dB_TX";
+			};
+		};
+		i2c@3 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <3>;
+
+			gpio_rf_ch0: gpio@20 { /* PCAL6416APW x16 GPIO expander, RF Ch 0 [U18] */
+				compatible = "nxp,pcal6416";
+				reg = <0x20>;
+				#gpio-cells = <2>;
+				gpio-controller;
+				gpio-line-names = "LE_RX", "atten_0.25dB_RX", "atten_0.5dB_RX",
+				"atten_1dB_RX", "atten_2dB_RX", "atten_4dB_RX", "atten_8dB_RX",
+				"atten_16dB_RX", "LE_TX", "atten_0.25dB_TX", "atten_0.5dB_TX",
+				"atten_1dB_TX", "atten_2dB_TX", "atten_4dB_TX", "atten_8dB_TX",
+				"atten_16dB_TX";
+			};
+		};
+		i2c@4 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <4>;
+
+			ina219@40 { /* INA219 +12V High-Side Power Monitor [U5] */
+				compatible = "ti,ina219";
+				reg = <0x40>;
+				shunt-resistor = <2000>; /* 2000 uOhms */
+			};
+		}
+		i2c@5 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <5>;
+
+			eeprom@50 { /* M24C02-FDW 2kbit EEPROM [U8] */
+				compatible = "at,24c02";
+				reg = <0x50>;
+			};
+		};
+	};
+};
