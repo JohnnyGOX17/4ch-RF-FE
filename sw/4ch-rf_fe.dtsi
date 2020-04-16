@@ -79,11 +79,14 @@
 			#size-cells = <0>;
 			reg = <4>;
 
-			ina219@40 { /* INA219 +12V High-Side Power Monitor [U5] */
+			/* Currently not populated due to pinout error
+			   INA219 +12V High-Side Power Monitor [U5]
+			ina219@40 {
 				compatible = "ti,ina219";
 				reg = <0x40>;
-				shunt-resistor = <2000>; /* 2000 uOhms */
+				shunt-resistor = <2000>;
 			};
+			*/
 		}
 		i2c@5 {
 			#address-cells = <1>;
@@ -95,5 +98,6 @@
 				reg = <0x50>;
 			};
 		};
+		/* Switch ports 6 & 7 unused */
 	};
 };
