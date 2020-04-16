@@ -1,2 +1,3 @@
-# 4ch-RF-FE
-4-channel RF Front End design
+# 4-Channel RF Front End
+
+![kicad 3D](docs/4ch_RF_FE_KiCad.png)
