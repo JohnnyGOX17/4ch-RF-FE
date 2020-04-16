@@ -87,7 +87,7 @@
 				shunt-resistor = <2000>;
 			};
 			*/
-		}
+		};
 		i2c@5 {
 			#address-cells = <1>;
 			#size-cells = <0>;
